@@ -110,6 +110,27 @@ html p a:hover {
 	text-decoration: none;
 }
 
+.hero-container {
+	position: relative;
+}
+
+.zorrito-hero-container {
+	position: absolute;
+	width: 600px;
+	right: 0;
+	bottom: -46px;
+	z-index: 10;
+	display: inline-block;
+	margin-left: auto;
+	/* height: auto; */
+}
+.zorrito-hero-container .zorrito-hero{
+	width: 90%;
+	height: auto;
+
+}
+
+
 /*
 *
 * Typography
