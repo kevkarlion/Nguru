@@ -110,9 +110,18 @@ html p a:hover {
 	text-decoration: none;
 }
 
+
+
+.container-nav {
+	max-height: 150px !important;
+}
+
+
 .hero-container {
 	position: relative;
 }
+
+
 
 .zorrito-hero-container {
 	position: absolute;
@@ -122,12 +131,22 @@ html p a:hover {
 	z-index: 10;
 	display: inline-block;
 	margin-left: auto;
-	/* height: auto; */
+	animation: slideUp 3s ease-in-out forwards;
 }
 .zorrito-hero-container .zorrito-hero{
 	width: 90%;
 	height: auto;
+}
 
+
+/* Animacion Zorrito Hero */
+@keyframes slideUp {
+	0% {
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateY(0);
+	}
 }
 
 
@@ -9675,8 +9694,8 @@ html.rd-navbar-fixed-linked .page {
 }
 
 .rd-navbar-minimal.rd-navbar-static .rd-navbar-brand img {
-	max-width: 240px;
-	max-height: 60px;
+	max-width: 843px;
+	max-height: 596px;
 }
 
 .rd-navbar-minimal.rd-navbar-static .rd-navbar-megamenu {
