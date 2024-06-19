@@ -20,44 +20,41 @@
       <!-- Page Header-->
       <header class="section page-header" data-type="anchor">
         <!-- RD Navbar-->
-        <div class="rd-navbar-wrap container-nav">
-          <nav class="rd-navbar rd-navbar-minimal" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-fixed" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
-            <div class="rd-navbar-main-outer">
-              <div class="rd-navbar-main">
-                <!-- RD Navbar Panel-->
-                <div class="rd-navbar-panel">
-                  <!-- RD Navbar Toggle-->
-                  <button class="rd-navbar-toggle" data-rd-navbar-toggle="#rd-navbar-nav-wrap-1"><span></span></button>
-                  <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="index.html"><img src="./images/Logo-nav.png" width="240" height="40" alt=""></a>
-                </div>
-                <div class="rd-navbar-main-element">
-                  <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-1">
-                    <!-- RD Navbar Nav-->
-                    <ul class="rd-navbar-nav">
-                      <li class="rd-nav-item active"><a class="rd-nav-link" href="#home">Home</a>
-                      </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="#services">Servicios</a>
-                      </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="#about-us">Nosotros</a>
-                      </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="#our-team">Nuestro equipo</a>
-                      </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="#testimonials">Testimonios</a>
-                      </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="#contact-us">Contactanos</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </nav>
+        <div class="container-nav">
+          <button class="rd-navbar-toggle" data-rd-navbar-toggle="#rd-navbar-nav-wrap-1">
+            <span></span>
+          </button>
+          <figure class="container-nav__logo">
+            <a class="rd-navbar-brand " href="#">
+              <img src="./images/zorrito-navbar.png" alt="">
+            </a>
+          </figure>
+          <ul class="container-nav__ul">
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">Servicios</a>
+            </li>
+            <li>
+              <a href="">Nosotros</a>
+            </li>
+            <li>
+              <a href="">Testimonios</a>
+            </li>
+            <li>
+              <a href="">Contactanos</a>
+            </li>
+          </ul>
         </div>
       </header>
       <div class="swiper-container swiper-slider swiper-slider-minimal hero-container" id="home" data-loop="true" data-slide-effect="fade" data-autoplay="3500" data-simulate-touch="true">
-        <figure class="zorrito-hero-container">
-          <img class="zorrito-hero" src='./images/Zorrito-Hero.jpg' alt="">
-        </figure>
+        <div class="zorrito-hero-container">
+          <div class="zorrito-hero__circle"></div>
+          <figure class="zorrito-hero-figure">
+            <img class="zorrito-hero" src='./images/zorrito-Hero.png' alt="">
+          </figure>
+        </div>
         <div class="swiper-wrapper">
           <div class="swiper-slide" data-slide-bg="images/slider-minimal-slide-1-1920x888.jpg">
             <div class="swiper-slide-caption">

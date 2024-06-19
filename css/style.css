@@ -18,6 +18,7 @@
   }
   html {
 	font-family: 'Akzidenz Grotesk', sans-serif !important;
+	font-size: 16px;
   }
   
 
@@ -113,7 +114,48 @@ html p a:hover {
 
 
 .container-nav {
-	max-height: 150px !important;
+	display: flex;
+	max-height: 165px !important;
+	min-height: 165px;
+	width: 100%;
+	
+}
+
+
+/* figure */
+.container-nav__logo {
+	display: inline-block;
+	min-width: 361px;
+	width: 450px;
+	height: auto;
+}
+
+.container-nav__logo img {
+	width:100%;
+	height: auto;
+	display: inline-block;
+	position: relative;
+	top: -26px;
+	padding-left: 50px;
+	
+}
+
+.container-nav__ul {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	width: 100%;
+	gap: 50px;
+	margin-right: 50px;
+}
+
+.container-nav__ul li a {
+	font-size: 1.1rem;
+	font-weight: 400;
+	color: #52565e ;
+}
+.container-nav__ul li a:hover {
+	color: #1cb8d6;
 }
 
 
@@ -121,22 +163,59 @@ html p a:hover {
 	position: relative;
 }
 
-
-
 .zorrito-hero-container {
 	position: absolute;
-	width: 600px;
 	right: 0;
-	bottom: -46px;
+	min-width: 600px;
+	height: auto;
 	z-index: 10;
+}
+
+.zorrito-hero__circle {
+	position: absolute;
+	top: 88px;
+    	right: 91px;
+	width: 500px;
+	height: 500px;
+	border: 100px solid #1cb8d6;
+	border-radius: 50%;
+	animation: scaleCircle 3s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+
+
+/* Animacion Circulo zorrito */
+@keyframes scaleCircle{
+	0% {
+		transform: scale(.4);
+		opacity: 0;
+	}
+	20% {
+		transform: scale(.5);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+
+.zorrito-hero-figure {
+	position: relative;
+	width: 600px;
+	top: -33px;
+    	right: 71px;
+	height: auto;
 	display: inline-block;
 	margin-left: auto;
-	animation: slideUp 3s ease-in-out forwards;
+	animation: slideUp 4s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 }
-.zorrito-hero-container .zorrito-hero{
+
+.zorrito-hero-figure .zorrito-hero{
 	width: 90%;
 	height: auto;
 }
+
 
 
 /* Animacion Zorrito Hero */
