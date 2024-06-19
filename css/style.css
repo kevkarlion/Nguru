@@ -19,6 +19,7 @@
   html {
 	font-family: 'Akzidenz Grotesk', sans-serif !important;
 	font-size: 16px;
+	box-sizing: border-box;
   }
   
 
@@ -113,6 +114,7 @@ html p a:hover {
 
 
 
+
 .container-nav {
 	display: flex;
 	max-height: 165px !important;
@@ -151,16 +153,31 @@ html p a:hover {
 
 .container-nav__ul li a {
 	font-size: 1.1rem;
-	font-weight: 400;
+	font-weight: 600;
 	color: #52565e ;
 }
 .container-nav__ul li a:hover {
 	color: #1cb8d6;
+	font-weight: bold;
+	font-size: 1.1rem;
+
 }
 
+.container-main-hero {
+	box-sizing: border-box;
+	display: flex;
+	position: relative;
+	
+	align-items: center;
+	width: 100%;
+	min-height: 700px;
+	height: auto;
+	min-width: 1198px;
+}
 
 .hero-container {
 	position: relative;
+	
 }
 
 .zorrito-hero-container {
@@ -177,21 +194,37 @@ html p a:hover {
     	right: 91px;
 	width: 500px;
 	height: 500px;
-	border: 100px solid #1cb8d6;
+	border: 115px solid #1cb8d6;
 	border-radius: 50%;
-	animation: scaleCircle 3s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+	animation: scaleCircle 4s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+
+.container-text-hero {
+	display: flex;
+	max-width: 750px;
+	min-width: 600px;
+	height: 400px;
+	min-width: 298px;
+	padding-left: 180px;
+
+}
+
+.text-hero {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
 }
 
 
 /* Animacion Circulo zorrito */
 @keyframes scaleCircle{
 	0% {
-		transform: scale(.4);
-		opacity: 0;
+		transform: scale(.3);
+		opacity: .8;
 	}
 	20% {
 		transform: scale(.5);
-		opacity: 1;
+		opacity: .9;
 	}
 	100% {
 		transform: scale(1);
@@ -309,20 +342,20 @@ h1,
 	}
 }
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
 	h1,
 	.heading-1 {
 		font-size: 58px;
 	}
-}
+} */
 
-@media (min-width: 1600px) {
+/* @media (min-width: 1600px) {
 	h1,
 	.heading-1 {
 		font-size: 68px;
 		line-height: 1.17647;
 	}
-}
+} */
 
 h2,
 .heading-2 {
@@ -668,7 +701,7 @@ html .page .text-primary {
 * Links
 */
 a {
-	transition: all 0.3s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
 a, a:focus, a:active, a:hover {
@@ -9944,14 +9977,14 @@ html.rd-navbar-fixed-linked .page {
 	width: 100%;
 	height: auto;
 	min-height: inherit;
-	transition-property: transform;
+	/* transition-property: transform; */
 	box-sizing: content-box;
 }
 
-.swiper-container-android .swiper-slide,
+/* .swiper-container-android .swiper-slide,
 .swiper-wrapper {
 	transform: translate3d(0px, 0, 0);
-}
+} */
 
 .swiper-container-multirow > .swiper-wrapper {
 	flex-wrap: wrap;
@@ -10946,13 +10979,13 @@ button.swiper-pagination-bullet {
 
 .swiper-slider-minimal .swiper-slide-text > * {
 	position: relative;
-	transform: translateY(100%);
+	/* transform: translateY(100%); */
 }
 
-.swiper-slider-minimal .swiper-slide-active .swiper-slide-text > * {
+/* .swiper-slider-minimal .swiper-slide-active .swiper-slide-text > * {
 	transform: translateY(0);
 	transition: .5s .3s;
-}
+} */
 
 @media (min-width: 768px) {
 	.swiper-slider-minimal .swiper-slide-caption {
