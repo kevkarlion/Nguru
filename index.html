@@ -10,6 +10,10 @@
     <!-- Stylesheets-->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <!--[if lt IE 10]>
     <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <script src="js/html5shiv.min.js"></script>
@@ -34,10 +38,10 @@
               <a href="">Home</a>
             </li>
             <li>
-              <a href="">Servicios</a>
+              <a href="#services">Servicios</a>
             </li>
             <li>
-              <a href="">Nosotros</a>
+              <a href="#about-us">Nosotros</a>
             </li>
             <li>
               <a href="">Testimonios</a>
@@ -48,22 +52,25 @@
           </ul>
         </div>
       </header>
+      <!-- Contenido deL Hero -->
       <div class="container-main-hero">
-        <div class="zorrito-hero-container">
-          <div class="zorrito-hero__circle"></div>
-          <figure class="zorrito-hero-figure">
-            <img class="zorrito-hero" src='./images/zorrito-Hero.png' alt="">
-          </figure>
-        </div>
+        <div class="container-secondary-hero">
           <div class="container-text-hero">
-            <div class="text-large text-hero"><h1>Todos tenemos una historia para contar, tu empresa también</h1></div>
+            <div class="text-hero"><h1 class="text-hero-h1">Todos tenemos una historia para contar, tu empresa también</h1></div>
+          </div>
+          <div class="zorrito-hero-container">
+            <figure class="zorrito-hero-figure">
+              <div class="zorrito-hero__circle"></div>
+              <img class="zorrito-hero" src='./images/zorrito-hero-modified.png' alt="">
+            </figure>
+          </div>
         </div>
         </div>
       </div>
       <!-- Our Services-->
       <section class="section section-lg text-center" id="services" data-type="anchor">
         <div class="container">
-          <h3 class="wow-outer"><span class="wow slideInUp">Nuestros servicios</span></h3>
+          <h3 class="wow-outer" id="nuestros-servicios"><span class="wow slideInUp">Nuestros servicios</span></h3>
           <p class="wow-outer"><span class="text-width-1 wow slideInDown">En NGURU, ofrecemos una gama completa de servicios de marketing diseñados para impulsar tu negocio al siguiente nivel.</span></p>
           <div class="row row-50 row-xxl-70 offset-top-2">
             <div class="col-sm-6 col-md-4 col-lg-3 wow-outer">
@@ -149,8 +156,9 @@
               <!-- Box Light-->
               <article class="box-light wow slideInLeft" data-wow-delay=".15s">
                 <div class="box-light-icon fl-bigmug-line-megaphone11"></div>
-                <h4 class="box-light-title">Contenido Audiovisual Multiplataforma</h4>
-                <p>Creación de videos y contenido visual.
+                <h4 class="box-light-title">Community Manager</h4>
+                <p> Gestión de comunidades online.
+
                 </p>
               </article>
             </div>
@@ -170,9 +178,9 @@
         <div class="container">
           <div class="row row-50 justify-content-center justify-content-lg-between">
             <div class="col-md-10 col-lg-6 col-xl-5">
-              <h3 class="wow-outer"><span class="wow slideInDown">A Few Words About Us</span></h3>
-              <p class="wow-outer"><span class="wow slideInDown" data-wow-delay=".05s">We are a team of talented marketers who love creating smart ideas for clients that appreciate uniqueness. We use our creative potential to provide the best ideas.</span></p>
-              <p class="wow-outer"><span class="wow slideInDown" data-wow-delay=".1s">We have a wide range of experience, expertise and tools to create and implement your campaigns, from carefully curating awesome content to optimising it with our great SEO powers as well as outdoor marketing skills.</span></p>
+              <h3 class="wow-outer"><span class="wow slideInDown">Unas Palabras Sobre Nosotros</span></h3>
+              <p class="wow-outer"><span class="wow slideInDown" data-wow-delay=".05s">Ngürü es una agencia de publicidad y marketing, comprometida en crear marcas que inspiren y conecten con audiencias de manera auténtica y significativa. Con un enfoque en la creatividad, la colaboración y la responsabilidad social.</span></p>
+              <p class="wow-outer"><span class="wow slideInDown" data-wow-delay=".1s">Nos posicionamos como un socio estratégico que guía a las empresas hacia una conexión profunda con sus clientes, generando mayores niveles de compromiso y atractivo de talento.</span></p>
               <div class="wow-outer button-outer"><a class="button button-lg button-primary button-winona wow slideInDown" data-wow-delay=".1s" href="#">Learn more</a></div>
             </div>
             <div class="col-md-10 col-lg-6 wow-outer"><img class="img-responsive wow slideInRight" src="images/large-features-2-570x368.jpg" alt="" width="570" height="368"/>

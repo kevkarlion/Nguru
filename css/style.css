@@ -20,6 +20,8 @@
 	font-family: 'Akzidenz Grotesk', sans-serif !important;
 	font-size: 16px;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
+	 
   }
   
 
@@ -119,6 +121,7 @@ html p a:hover {
 	display: flex;
 	max-height: 165px !important;
 	min-height: 165px;
+	min-width: 850px;
 	width: 100%;
 	
 }
@@ -153,7 +156,7 @@ html p a:hover {
 
 .container-nav__ul li a {
 	font-size: 1.1rem;
-	font-weight: 600;
+	font-weight: 400;
 	color: #52565e ;
 }
 .container-nav__ul li a:hover {
@@ -164,15 +167,25 @@ html p a:hover {
 }
 
 .container-main-hero {
-	box-sizing: border-box;
 	display: flex;
 	position: relative;
-	
-	align-items: center;
+	align-items: start;
+	justify-content: center;
 	width: 100%;
-	min-height: 700px;
+	min-height: 49.25rem;
 	height: auto;
 	min-width: 1198px;
+}
+
+.container-secondary-hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	padding: 0 50px;
+	width: 100%;
+	min-width: 770px;
+	height: auto;
 }
 
 .hero-container {
@@ -181,74 +194,38 @@ html p a:hover {
 }
 
 .zorrito-hero-container {
-	position: absolute;
-	right: 0;
+	flex: 1;
 	min-width: 600px;
 	height: auto;
 	z-index: 10;
+	padding-left: 3.5rem;
+}
+.zorrito-hero-figure {
+	width: 800px;
+	height: auto;
+	display: inline-block;
+}
+
+.zorrito-hero{
+	position: absolute;
+	top: -3.06rem;
+	width: 37rem;
+	height: auto;
+	animation: slideUp 4s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 }
 
 .zorrito-hero__circle {
 	position: absolute;
-	top: 88px;
-    	right: 91px;
-	width: 500px;
-	height: 500px;
-	border: 115px solid #1cb8d6;
+	top: .25rem;
+	right: 3rem;
+	width: 37rem;
+	height: 37rem;
+	border: 150px solid #1cb8d6;
 	border-radius: 50%;
-	animation: scaleCircle 4s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+	animation: scaleCircle 3s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+	box-shadow: 17px 9px 17px;
+	z-index: -10;
 }
-
-.container-text-hero {
-	display: flex;
-	max-width: 750px;
-	min-width: 600px;
-	height: 400px;
-	min-width: 298px;
-	padding-left: 180px;
-
-}
-
-.text-hero {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: left;
-}
-
-
-/* Animacion Circulo zorrito */
-@keyframes scaleCircle{
-	0% {
-		transform: scale(.3);
-		opacity: .8;
-	}
-	20% {
-		transform: scale(.5);
-		opacity: .9;
-	}
-	100% {
-		transform: scale(1);
-		opacity: 1;
-	}
-}
-
-
-.zorrito-hero-figure {
-	position: relative;
-	width: 600px;
-	top: -33px;
-    	right: 71px;
-	height: auto;
-	display: inline-block;
-	margin-left: auto;
-	animation: slideUp 4s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
-}
-
-.zorrito-hero-figure .zorrito-hero{
-	width: 90%;
-	height: auto;
-}
-
 
 
 /* Animacion Zorrito Hero */
@@ -260,6 +237,48 @@ html p a:hover {
 		transform: translateY(0);
 	}
 }
+
+
+/* Animacion Circulo zorrito */
+@keyframes scaleCircle{
+	0% {
+		transform: scale(.6);
+		
+	}
+	/* 20% {
+		transform: scale(.5);
+		opacity: .9;
+	} */
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+.container-text-hero {
+	display: flex;
+	flex: .8;
+	height: auto;
+	max-height: 37,5rem;
+	padding-top: 5.62rem;
+
+}
+
+.text-hero {
+	display: flex;
+	width: 100%;
+	text-transform: uppercase;
+	min-width: 24.68rem;
+}
+
+.text-hero-h1 {
+	font-size: 3rem;
+	width: 100%;
+}
+
+
+
+
+
 
 
 /*
@@ -635,7 +654,7 @@ code {
 p [data-toggle='tooltip'] {
 	padding-left: .25em;
 	padding-right: .25em;
-	color: #1ab785;
+	color: #1cb8d6;
 }
 
 p [style*='max-width'] {
@@ -1864,7 +1883,7 @@ html .list-inline-md > * {
 
 .list-inline-comma > li {
 	display: inline-block;
-	color: #1ab785;
+	color: #1cb8d6;
 }
 
 .list-inline-comma > li:not(:last-child)::after {
@@ -8287,7 +8306,7 @@ html:not(.lt-ie10) .not-animated {
 *
 * Preloader
 */
-.preloader {
+/* .preloader {
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -8396,7 +8415,7 @@ html:not(.lt-ie10) .not-animated {
 	100% {
 		margin-left: 100vw;
 	}
-}
+} */
 
 /*
 *
