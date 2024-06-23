@@ -174,6 +174,10 @@ html p a:hover {
 
 .container-main-hero {
 	display: flex;
+	/* background-image: url('../images/filmStudio1.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat; */
 	position: relative;
 	align-items: start;
 	justify-content: center;
@@ -182,6 +186,16 @@ html p a:hover {
 	height: auto;
 	min-width: 1198px;
 }
+/* .container-main-hero::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(255, 255, 255, 0.5); Blanco semitransparente
+	z-index: 1;
+    } */
 
 .container-secondary-hero {
 	display: flex;
@@ -215,7 +229,7 @@ html p a:hover {
 .zorrito-hero{
 	position: absolute;
 	top: -51px;
-	right: 170px;
+	right: 84px;
 	width: 592px;
 	height: auto;
 	animation: slideUp 4s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
@@ -224,7 +238,7 @@ html p a:hover {
 .zorrito-hero__circle {
 	position: absolute;
 	top: 1px;
-	right: 150px;
+	right: 64px;
 	width: 576px;
 	height: 576px;
 	border: 150px solid #1cb8d6;
@@ -265,9 +279,7 @@ html p a:hover {
 	display: flex;
 	flex: .8;
 	height: auto;
-	max-height: 37,5rem;
 	padding-top: 5.62rem;
-
 }
 
 .text-hero {
@@ -280,6 +292,8 @@ html p a:hover {
 .text-hero-h1 {
 	font-size: 3rem;
 	width: 100%;
+	font-weight: bold;
+	color: black;
 }
 
 
@@ -342,7 +356,7 @@ html p a:hover {
 
 .container-redes__li a {
 	display: flex;
-	align-items: center;
+	align-items: baseline;
 }
 .container-redes__li svg {
 	width: 30px;
@@ -351,9 +365,38 @@ html p a:hover {
 }
 
 
+.icon-whatsapp {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 55px;
+	height: 55px;
+	z-index: 1000;
+}
 
+.icon-whatsapp__container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
 
+.icon-whatsapp__container::before {
+	content: '';
+	position: absolute;
+	border-radius: 50%;
+	width: 55px;
+	height: 55px;
 
+	top: 0;
+	left: 0;
+	box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+	background-color: rgba(255, 255, 255, 0.5); /* Fondo semitransparente para visualizar */
+	z-index: -1;
+}
+.icon-whatsapp img {
+	width: 100%;
+	height: 100%;
+}
 
 
 /*
@@ -7896,6 +7939,15 @@ html [class*='section-'].section-bottom-0 {
 
 .object-inline {
 	white-space: nowrap;
+}
+
+.footer-info-contacto {
+	display: flex;
+	align-items: center;
+}
+
+.footer-info-contacto__anchor {
+	text-align: end;
 }
 
 .object-inline > * {
