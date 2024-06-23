@@ -14,15 +14,9 @@ window.addEventListener('scroll', ()=> {
 
 const buttonToggleMenu = document.querySelector('.button-toggle-menu');
 const toggleMenu = document.getElementById('toggle-menu');
-let btnDropDownTgl = true;
 
 
 buttonToggleMenu.addEventListener('click', function() {
-      btnDropDownTgl = !btnDropDownTgl;
-      console.log(btnDropDownTgl);
+      toggleMenu.classList.toggle('hidden');
 
-      if(btnDropDownTgl === true ) {
-            //true me agrega
-            toggleMenu.classList.toggle('hidden');
-      }
 });
