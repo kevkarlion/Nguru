@@ -9,6 +9,20 @@ window.addEventListener('scroll', ()=> {
 })
 
 
-// if (scrollY > 250px) {
-//       navegation.classList.add('')
-// }
+
+//interactividad menu hamburguesa
+
+const buttonToggleMenu = document.querySelector('.button-toggle-menu');
+const toggleMenu = document.getElementById('toggle-menu');
+let btnDropDownTgl = true;
+
+
+buttonToggleMenu.addEventListener('click', function() {
+      btnDropDownTgl = !btnDropDownTgl;
+      console.log(btnDropDownTgl);
+
+      if(btnDropDownTgl === true ) {
+            //true me agrega
+            toggleMenu.classList.toggle('hidden');
+      }
+});
