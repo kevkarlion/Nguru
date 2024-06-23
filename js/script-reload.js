@@ -17,6 +17,5 @@ const toggleMenu = document.getElementById('toggle-menu');
 
 
 buttonToggleMenu.addEventListener('click', function() {
-      toggleMenu.classList.toggle('hidden');
-
+      toggleMenu.classList.toggle('no-hidden')
 });

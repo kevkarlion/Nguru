@@ -8,7 +8,7 @@
 	font-weight: normal;
 	font-style: normal;
   }
-  
+
   /* Puedes agregar más estilos, por ejemplo, bold, italic, etc. */
   @font-face {
 	font-family: 'Akzidenz Grotesk';
@@ -21,9 +21,9 @@
 	font-size: 16px;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
-	 
+
   }
-  
+
 
 
 a:focus,
@@ -147,7 +147,7 @@ html p a:hover {
 	position: relative;
 	top: -26px;
 	padding-left: 50px;
-	
+
 }
 
 .button-toggle-menu {
@@ -186,7 +186,7 @@ html p a:hover {
 /* Media querie Nav */
 /* hasta 989px, aplica estos estilos*/
 @media (max-width: 990px) {
-	
+
 	.container-nav{
 		display: flex;
 		flex-wrap: wrap;
@@ -235,22 +235,30 @@ html p a:hover {
 		display: block;
 		width: 30px;
 		height: 30px;
-		
+
 		/* border: 1px solid	black; */
 		/* background-color: #007aff; */
 	}
 
 	.toggle-menu{
-		display: none;
+		position: relative;
+		top: 0;
+		left: -200px;
+		
 		border-bottom: 1px solid rgb(171, 177, 191);
 		border-right: 1px solid rgb(171, 177, 191);
 		border-radius: 5px;
 		background-color: white;
-		width: 288px;
+		width: auto;
+		transform: translateX(0);
+		transition: transform .3s ease;
 	}
-	
-	.hidden{
+
+
+	.no-hidden{
 		display: inline-block;
+		transform: translateX(200px);
+		
 	}
 
 	.children-nav {
@@ -258,18 +266,22 @@ html p a:hover {
 
 	}
 
-	.menu-list-sidebar {
+	.menu-list-sidebar > :first-child{
 		padding-top: 10px;
+	}
+	.menu-list-sidebar > :last-child{
+		padding-top: 15px;
 	}
 	.menu-list-sidebar__items {
 		width: auto;
 		display: flex;
-		padding-left: 25px;
+		padding-left: 40px;
+		padding-right: 40px;
 		padding-bottom: 10px;
 		transition-property: background-color;
 		transition-duration: .2s;
 		transition-timing-function: ease;
-		
+
 	}
 
 	.menu-list-sidebar__items:hover {
@@ -298,7 +310,7 @@ html p a:hover {
 	.toggle-menu {
 		display: none;
 	}
-	
+
 	.container-button-toggle__primary{
 		display: none;
 	}
@@ -353,7 +365,7 @@ html p a:hover {
 
 .hero-container {
 	position: relative;
-	
+
 }
 
 .zorrito-hero-container {
@@ -407,7 +419,7 @@ html p a:hover {
 @keyframes scaleCircle{
 	0% {
 		transform: scale(.6);
-		
+
 	}
 	/* 20% {
 		transform: scale(.5);
@@ -7949,7 +7961,7 @@ html [class*='section-'].section-bottom-0 {
 	color: #74757f;
 }
 
-/** 
+/**
 * Accent Backgrounds
 */
 .bg-primary {
@@ -10063,7 +10075,7 @@ html.rd-navbar-fixed-linked .page {
 /**
 *
 * RD Navbar Minimal
-* 
+*
 */
 .rd-navbar-minimal.rd-navbar-static {
 	border-bottom: 1px solid transparent;
@@ -11433,14 +11445,14 @@ button.swiper-pagination-bullet {
 	}
 }
 
-/* 
+/*
  * 	Owl Carousel - Auto Height Plugin
  */
 .owl-height {
 	transition: height 500ms ease-in-out;
 }
 
-/* 
+/*
  *  Core Owl Carousel CSS File
  */
 .owl-carousel {
@@ -11524,7 +11536,7 @@ button.swiper-pagination-bullet {
 	display: block;
 }
 
-/* 
+/*
  * 	Owl Carousel - Lazy Load Plugin
  */
 .owl-carousel .owl-item .owl-lazy {
@@ -11532,7 +11544,7 @@ button.swiper-pagination-bullet {
 	transition: opacity 400ms ease;
 }
 
-/* 
+/*
  * 	Owl Carousel - Video Plugin
  */
 .owl-carousel .owl-video-wrapper {
