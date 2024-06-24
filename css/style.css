@@ -343,12 +343,26 @@ html p a:hover {
 .container-secondary-hero {
 	display: flex;
 	justify-content: center;
+	gap: 10px;
 	align-items: center;
 	position: relative;
 	padding: 0 50px;
 	width: 100%;
-	min-width: 770px;
+	/* min-width: 770px; */
 }
+
+@media (max-width:1200px) {
+	.container-main-hero {
+		min-height: 39.25rem;
+	}
+}
+
+@media (max-width: 900px) {
+	.container-main-hero {
+		min-height: 33.25rem;
+	  }
+}
+
 
 .hero-container {
 	position: relative;
@@ -357,13 +371,13 @@ html p a:hover {
 
 .zorrito-hero-container {
 	flex: 1;
-	min-width: 600px;
+	/* min-width: 600px; */
 	height: auto;
 	z-index: 10;
 	/* padding-right: 15px; */
 }
 .zorrito-hero-figure {
-	width: 800px;
+	/* width: 800px; */
 	height: auto;
 	display: inline-block;
 }
@@ -422,20 +436,42 @@ html p a:hover {
 }
 
 /* Zorrito HERO */
-@media (max-width: 971px) {
+
+
+
+@media (max-width: 1200px) {
+
+	
+	.zorrito-hero__circle{
+		min-width: 450px;
+		min-height: 450px;
+		top: 22px;
+		right: 129px;
+		border: 132px solid #1cb8d6;
+	}
+
+	.zorrito-hero {
+		width: 471px;
+		top: -44px;
+    		right: 133px;
+	}
+}
+
+
+/* @media (max-width: 1090px) {
 	.zorrito-hero__circle{
 		min-width: 500px;
 		min-height: 500px;
 		top: 22px;
-		right: 113px;
+		right: 129px;
 	}
 
 	.zorrito-hero {
 		width: 550px;
 		top: -44px;
-    		right: 106px;
+    		right: 121px;
 	}
-}
+} */
 
 /* Zorrito HERO */
 @media (max-width: 940px) {
@@ -455,7 +491,26 @@ html p a:hover {
 
 
 
+@media (max-width: 900px) {
+	.zorrito-hero__circle{
+		min-width: 380px;
+        	min-height: 380px;
+        	top: 26px;
+        	right: 237px;
+		border: 117px solid #1cb8d6;
+	}
 
+	.zorrito-hero {
+		width: 413px;
+		top: -43px;
+		right: 237px;
+	}
+}
+
+
+
+
+/* TEXT HERO */
 
 .container-text-hero {
 	display: flex;
@@ -482,13 +537,15 @@ html p a:hover {
 
 
 /* Text-HERO */
-@media (max-width: 971px) {
+
+@media (max-width: 1200px) {
+
 	.container-text-hero {
-		min-width: 21.56rem;
+		min-width: 3.5rem;
 	}
-	.text-hero {
-		padding-right: 1.56rem;
 
+	.text-hero{
+		padding-right: 6.56rem;
 	}
 
 	.text-hero-h1{
@@ -497,19 +554,32 @@ html p a:hover {
 	}
 
 }
+
+@media (max-width: 1080px) {
+
+	.container-text-hero {
+		min-width: 2.5rem;
+	}
+	.text-hero-h1{
+		font-size: 2.4rem;
+		
+	}
+
+
+}
+
+
 @media (max-width: 940px) {
-	.text-hero {
-		padding: 0;
 
+	.text-hero{
+		padding-right: 8.56rem;
 	}
 
 	.text-hero-h1{
-		font-size: 2.8rem;
+		font-size: 2.3rem;
 		
 	}
-
 }
-
 
 
 
