@@ -185,7 +185,7 @@ html p a:hover {
 
 /* Media querie Nav */
 /* hasta 989px, aplica estos estilos*/
-@media (max-width: 990px) {
+@media (max-width: 991px) {
 
 	.container-nav{
 		display: flex;
@@ -243,8 +243,7 @@ html p a:hover {
 	.toggle-menu{
 		position: relative;
 		top: 0;
-		left: -200px;
-		
+		left: -226px;
 		border-bottom: 1px solid rgb(171, 177, 191);
 		border-right: 1px solid rgb(171, 177, 191);
 		border-radius: 5px;
@@ -257,7 +256,7 @@ html p a:hover {
 
 	.no-hidden{
 		display: inline-block;
-		transform: translateX(200px);
+		transform: translateX(226px);
 		
 	}
 
@@ -267,31 +266,33 @@ html p a:hover {
 	}
 
 	.menu-list-sidebar > :first-child{
-		padding-top: 10px;
+		padding-top: 20px;
+		
 	}
 	.menu-list-sidebar > :last-child{
-		padding-top: 15px;
+		padding-bottom: 20px;
 	}
 	.menu-list-sidebar__items {
 		width: auto;
 		display: flex;
-		padding-left: 40px;
-		padding-right: 40px;
-		padding-bottom: 10px;
+		padding: 5px;
 		transition-property: background-color;
 		transition-duration: .2s;
 		transition-timing-function: ease;
-
 	}
 
 	.menu-list-sidebar__items:hover {
 		background-color:#1CB8D6;
+		color: white;
 	}
 
 	.menu-list-sidebar__items  a{
 		flex: 1;
+		color: black;
 		background-color: transparent;
 		width: auto;
+		padding-left: 60px;
+		padding-right: 60px;
 	}
 
 	.menu-list-sidebar__items  a:hover{
@@ -302,7 +303,7 @@ html p a:hover {
 
 }
 
-@media (min-width: 990px) {
+@media (min-width: 991px) {
 	.container-nav #dropdown-main  {
 		display: none;
 	}
@@ -329,11 +330,7 @@ html p a:hover {
 
 .container-main-hero {
 	display: flex;
-	/* background-image: url('../images/filmStudio1.jpg');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat; */
-	position: relative;
+	/* position: relative; */
 	align-items: start;
 	justify-content: center;
 	width: 100%;
@@ -341,16 +338,7 @@ html p a:hover {
 	height: auto;
 	min-width: 1050px;
 }
-/* .container-main-hero::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: rgba(255, 255, 255, 0.5); Blanco semitransparente
-	z-index: 1;
-    } */
+
 
 .container-secondary-hero {
 	display: flex;
@@ -360,7 +348,6 @@ html p a:hover {
 	padding: 0 50px;
 	width: 100%;
 	min-width: 770px;
-	height: auto;
 }
 
 .hero-container {
@@ -373,7 +360,7 @@ html p a:hover {
 	min-width: 600px;
 	height: auto;
 	z-index: 10;
-	padding-left: 3.5rem;
+	/* padding-right: 15px; */
 }
 .zorrito-hero-figure {
 	width: 800px;
@@ -381,21 +368,24 @@ html p a:hover {
 	display: inline-block;
 }
 
+
+/* absolute al secondary-hero */
 .zorrito-hero{
 	position: absolute;
 	top: -51px;
-	right: 84px;
+	right: 96px;
 	width: 592px;
 	height: auto;
 	animation: slideUp 4s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 }
 
+/* absolute al secondary-hero */
 .zorrito-hero__circle {
 	position: absolute;
 	top: 1px;
-	right: 64px;
-	width: 576px;
-	height: 576px;
+	right: 86px;
+	min-width: 570px;
+	min-height: 570px;
 	border: 150px solid #1cb8d6;
 	border-radius: 50%;
 	animation: scaleCircle 3s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
@@ -430,26 +420,99 @@ html p a:hover {
 		opacity: 1;
 	}
 }
+
+/* Zorrito HERO */
+@media (max-width: 971px) {
+	.zorrito-hero__circle{
+		min-width: 500px;
+		min-height: 500px;
+		top: 22px;
+		right: 113px;
+	}
+
+	.zorrito-hero {
+		width: 550px;
+		top: -44px;
+    		right: 106px;
+	}
+}
+
+/* Zorrito HERO */
+@media (max-width: 940px) {
+	.zorrito-hero__circle{
+		min-width: 450px;
+		min-height: 450px;
+		top: 26px;
+		right: 166px;
+	}
+
+	.zorrito-hero {
+		width: 489px;
+        	top: -43px;
+        	right: 160px;
+	}
+}
+
+
+
+
+
 .container-text-hero {
 	display: flex;
-	flex: .8;
-	height: auto;
-	padding-top: 5.62rem;
+	flex: 1;
+	min-width: 24.56rem;
+	height: 100%;
+	padding-top: 6.06rem;
+	padding-left: 10px;
 }
 
 .text-hero {
 	display: flex;
+	justify-content: flex-end;
+	padding-right: 2.56rem;
 	width: 100%;
 	text-transform: uppercase;
-	min-width: 24.68rem;
 }
 
 .text-hero-h1 {
-	font-size: 3rem;
-	width: 100%;
+	font-size: 4rem;
 	font-weight: bold;
 	color: black;
 }
+
+
+/* Text-HERO */
+@media (max-width: 971px) {
+	.container-text-hero {
+		min-width: 21.56rem;
+	}
+	.text-hero {
+		padding-right: 1.56rem;
+
+	}
+
+	.text-hero-h1{
+		font-size: 2.8rem;
+		
+	}
+
+}
+@media (max-width: 940px) {
+	.text-hero {
+		padding: 0;
+
+	}
+
+	.text-hero-h1{
+		font-size: 2.8rem;
+		
+	}
+
+}
+
+
+
+
 
 
 /* Aboaut Us */
