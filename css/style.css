@@ -537,14 +537,14 @@ html p a:hover {
 	.zorrito-hero__circle{
 		min-width: 320px;
 		min-height: 320px;
-		top: 12px;
+		top: 41px;
 		right: 3%;
 		border: 95px solid #1CB8D6;
 	}
 
 	.zorrito-hero {
 		width: 360px;
-        	top: -43px;
+        	top: -13px;
         	right: 2%;
 	}
 }
@@ -584,12 +584,13 @@ html p a:hover {
 	min-width: 24.56rem;
 	height: 100%;
 	padding-top: 6.06rem;
-	padding-left: 10px;
+	padding-left: 10px;   
+	align-self: flex-start;
 }
 
 .text-hero {
 	display: flex;
-	width: 100%;
+	width: 94%;
 	text-transform: uppercase;
 }
 
@@ -606,33 +607,29 @@ html p a:hover {
 
 	.container-secondary-hero{
 		margin: 0px 79px;
+		padding-top: 4rem;
 	}
 
 	.container-text-hero {
 		min-width: 3.5rem;
-		padding-top: 4.06rem;
+		padding-top: 1.06rem;
 	}
 
 	
 
 	.text-hero-h1{
-		font-size: 3.7rem;
+		font-size: 3.2rem;
 		
 	}
 
 }
 
-@media (max-width: 1080px) {
 
-	
-
+@media (min-width: 940px) and (max-width: 990px) {
 	.container-text-hero {
-		min-width: 3.7rem;
-		padding: 0;
+		padding-top: 0px;
 	}
-
 }
-
 
 @media (max-width: 940px) {
 
@@ -640,9 +637,13 @@ html p a:hover {
 		margin: 0px 38px;
 	  }
     
+	.text-hero {
+		max-width: 305px;
+	}
+
 
 	.text-hero-h1{
-		font-size: 3.2rem;
+		font-size: 2.8rem;
 		
 	}
 }
@@ -656,7 +657,10 @@ html p a:hover {
 		padding-left: 2.62rem;
 	}
 
-
+	.text-hero {
+		max-width: 253px;
+		
+	}
 
 	.text-hero-h1{
 		font-size: 2.3rem;
@@ -684,7 +688,7 @@ html p a:hover {
 @media (max-width: 710px) {
 	
 	.text-hero-h1{
-		font-size: 2rem;
+		font-size: 2.2rem;
 		
 	}
 }
@@ -693,11 +697,9 @@ html p a:hover {
 
 
 @media (max-width: 630px) {
-	.container-secondary-hero {
-		margin-top: 45px;
-	}
+	
 	.text-hero-h1{
-		font-size: 1.6rem;
+		font-size: 1.8rem;
 		
 	}
 }
@@ -709,6 +711,8 @@ html p a:hover {
 	.container-secondary-hero {
 		margin-top: 45px;
 	}
+
+	
 }
 
 
@@ -726,6 +730,10 @@ html p a:hover {
 		width: 100%;
 		padding: 0;
 		
+	}
+
+	.text-hero {
+		width: 181px;
 	}
 
 
@@ -761,7 +769,7 @@ html p a:hover {
 
 
 /* mobile */
-@media (max-width: 464px) {
+@media (max-width: 466px) {
 	
 	.container-main-hero{
 		width: 100%;
@@ -775,6 +783,8 @@ html p a:hover {
 		gap: 0;
 		padding: 15px 15px;
 		height: 550px;
+		margin-top: 2.81rem;
+		
 	  }
 
 	  .container-text-hero {
@@ -782,16 +792,18 @@ html p a:hover {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: auto;
+		width: 100%;
+		height: 100vh;
 		padding: 15px 0;
-		margin-bottom: 38px;
+		margin-top: -2px;
+		margin-bottom: 67px;
 	  }
 
 	  .text-hero {
 		justify-content: center;
 		flex-wrap: wrap;
 		position: static;
-		width: auto;
+		width: 251px;
 		padding: 0;
 		
 	  }
@@ -806,7 +818,7 @@ html p a:hover {
     
 	  .zorrito-hero-container {
 		width: 100%;
-		height: 100%;
+		height: 100vh;
 		z-index: 10;
 		
 	  }
@@ -818,22 +830,35 @@ html p a:hover {
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-		height: auto;
+		height: 259px;
 		margin: 0px;
+		margin-top: 34px;
+
 	  }
 
 	  .zorrito-hero__circle{
-		position: static;
-		width: 90px;
-		height: 90px;
+		min-width: 271px;
+        	min-height: 271px;
+		position: relative;
+		top: -10%;
+		left: 1%;
+		border: 70px solid #1cb8d6;
 	  }
 
 	  .zorrito-hero{
 		position: absolute;
-		top: -35%;
+		top: -31%;
 		left: calc(50% - 181px);
 	  }
 
+}
+
+
+@media (min-width: 464px) and (max-width: 510px) {
+	
+	.text-hero-h1 {
+		font-size: 1.6rem;		
+	  }
 }
 
 
