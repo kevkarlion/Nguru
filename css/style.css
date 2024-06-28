@@ -795,24 +795,25 @@ html p a:hover {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		gap: 0;
 		padding: 15px 15px;
-		height: 550px;
-		margin-top: 2.81rem;
-		
+		height: 100%;
+		position: relative;
 	  }
 
 	  .container-text-hero {
+
+		
 		position: static;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-		height: 100vh;
-		padding: 15px 0;
-		margin-top: -2px;
-		margin-bottom: 67px;
+        	display: flex;
+        	justify-content: center;
+        	align-items: center;
+        	width: 100%;
+        	min-height: 37vh;
+
 	  }
+
+
+
 
 	  .text-hero {
 		justify-content: center;
@@ -833,19 +834,18 @@ html p a:hover {
     
 	  .zorrito-hero-container {
 		width: 100%;
-		height: 100vh;
+		min-height: 56vh;
 		z-index: 10;
-		
 	  }
 
 	  .zorrito-hero-figure{
 		display: flex;
-		position: relative;
+		position: static;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-		height: 259px;
+		min-height: 100%;
 		margin: 0px;
 		margin-top: 34px;
 
@@ -855,14 +855,14 @@ html p a:hover {
 		min-width: 271px;
         	min-height: 271px;
 		position: relative;
-		top: -10%;
+		top: -17%;
 		left: 1%;
-		border: 70px solid #1cb8d6;
+		border: 74px solid #1cb8d6;
 	  }
 
 	  .zorrito-hero{
 		position: absolute;
-		top: -31%;
+		top: 17.62rem;
 		left: calc(50% - 181px);
 	  }
 
