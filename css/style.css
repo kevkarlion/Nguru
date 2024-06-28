@@ -133,7 +133,6 @@ html p a:hover {
 }
 
 
-
 /* figure */
 .container-nav__logo {
 	display: flex;
@@ -158,8 +157,6 @@ html p a:hover {
 
 
 
-
-
 .container-nav__ul {
 	display: flex;
 	justify-content: flex-end;
@@ -175,7 +172,7 @@ html p a:hover {
 .container-nav__ul li a {
 	font-size: 1.2rem;
 	font-weight: 400;
-	color: #52565e ;
+	color: black ;
 }
 .container-nav__ul li a:hover {
 	color: #1cb8d6;
@@ -210,7 +207,6 @@ html p a:hover {
 		box-shadow: 0px 0px 10px;
 
 	}
-
 
 	.container-button-toggle__container-figure{
 		display:inline-block;
@@ -331,8 +327,6 @@ html p a:hover {
 
 
 
-
-
 /* HERO */
 
 .container-main-hero {
@@ -345,7 +339,6 @@ html p a:hover {
 	margin-top: 45px;
 }
 
-
 .container-secondary-hero {
 	display: flex;
 	justify-content: center;
@@ -354,8 +347,6 @@ html p a:hover {
 	position: relative;
 	padding: 0 50px;
 	width: 100%;
-	
-	/* min-width: 770px; */
 }
 
 @media (min-width: 1327px) {
@@ -363,8 +354,6 @@ html p a:hover {
 		margin: 0px 92px;
 	}
 }
-
-
 
 
 .hero-container {
@@ -385,7 +374,6 @@ html p a:hover {
 	display: inline-block;
 	height: 781px;
 }
-
 
 /* absolute al secondary-hero */
 .zorrito-hero{
@@ -429,18 +417,12 @@ html p a:hover {
 		transform: scale(.6);
 
 	}
-	/* 20% {
-		transform: scale(.5);
-		opacity: .9;
-	} */
+	
 	100% {
 		transform: scale(1);
 		opacity: 1;
 	}
 }
-
-
-
 
 
 
@@ -470,31 +452,12 @@ html p a:hover {
 	}
 }
 
-/* @media (min-width:991px) and (max-width: 1200px) {
-	.zorrito-hero {
-		width: 438px;
-		top: -24px;
-		right: 1%;
-	  }
-	  .zorrito-hero__circle {
-    		min-width: 380px;
-    		min-height: 380px;
-    		top: 40px;
-    		right: 2%;
-    		border: 116px solid #1cb8d6;
-	  }
-} */
-
-
 
 @media (max-width: 940px) {
 
 	.zorrito-hero-figure {
-	
 		height: 562px;
-	  
     }
-
 	.zorrito-hero__circle{
 		min-width: 380px;
 		min-height: 380px;
@@ -509,8 +472,6 @@ html p a:hover {
         	right: 1%;
 	}
 }
-
-
 
 @media (max-width: 900px) {
 	.zorrito-hero__circle{
@@ -573,8 +534,6 @@ html p a:hover {
 }
 
 
-
-
 /* TEXT HERO */
 
 .container-text-hero {
@@ -613,8 +572,6 @@ html p a:hover {
 		min-width: 3.5rem;
 		padding-top: 1.06rem;
 	}
-
-	
 
 	.text-hero-h1{
 		font-size: 3.5rem;
@@ -679,7 +636,6 @@ html p a:hover {
 
 	.text-hero-h1{
 		font-size: 2.3rem;
-		
 	}
 }
 @media (max-width: 795px) {
@@ -704,11 +660,8 @@ html p a:hover {
 	
 	.text-hero-h1{
 		font-size: 2.2rem;
-		
 	}
 }
-
-
 
 
 @media (max-width: 630px) {
@@ -744,13 +697,11 @@ html p a:hover {
 		position: static;
 		width: 100%;
 		padding: 0;
-		
 	}
 
 	.text-hero {
 		width: 181px;
 	}
-
 
 	.zorrito-hero-figure {
 		width: 100%;
@@ -758,6 +709,7 @@ html p a:hover {
 		position: relative;
 		margin-right: 231px;
 	}
+
 	.zorrito-hero__circle {
 		min-width: 240px;
         	min-height: 240px;
@@ -778,8 +730,6 @@ html p a:hover {
         	left: 1%;
     }
 }
-
-
 
 
 
@@ -809,11 +759,7 @@ html p a:hover {
         	align-items: center;
         	width: 100%;
         	min-height: 314px;
-
 	  }
-
-
-
 
 	  .text-hero {
 		justify-content: center;
@@ -829,7 +775,6 @@ html p a:hover {
 		font-size: 2rem;
 		overflow: hidden;
 		text-align: center;
-		
 	  }
     
 	  .zorrito-hero-container {
@@ -848,7 +793,6 @@ html p a:hover {
 		min-height: 100%;
 		margin: 0px;
 		margin-top: 34px;
-
 	  }
 
 	  .zorrito-hero__circle{
@@ -865,7 +809,6 @@ html p a:hover {
 		top: 17.62rem;
 		left: calc(50% - 181px);
 	  }
-
 }
 
 
@@ -877,7 +820,67 @@ html p a:hover {
 }
 
 
+/* Nuestros Servicios */
+
+#services {
+	
+	padding-bottom: 45px;
+}
+
+
+.card-services {
+	display: flex;
+	justify-content: center;
+}
+
+#nuestros-servicios {
+	font-weight: bold;
+	font-size: 2.7rem;
+}
+
+.title-card-services {
+	font-weight: bold;
+	text-align: center;
+}
+
+.card-services article {
+	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	flex-direction: column;
+}
+
+.card-services article p {
+	text-align: center;
+}
+
+.card-services article h4 {
+	text-align: center;
+}
+
+
+
+/* ------------------------------------- */
+
+
+
 /* Aboaut Us */
+
+.title-about-us {
+	color: #1CB8D6;
+	font-weight: bold;
+	font-size: 2.7rem;
+}
+
+.p-about-us {
+	color: white;
+}
+
+
+#about-us{
+	background-color: rgb(12 13 16);
+	padding-top: 87px;
+}
 
 .container-button-about-us {
 	display: flex;
@@ -901,6 +904,36 @@ html p a:hover {
 }
 
 
+
+/* ---------------- */
+
+
+
+
+
+/* Our-team */
+
+.title-our-team{
+	font-weight: bold;
+	font-size: 2.7rem;
+}
+
+
+/* ------- ----------*/
+
+
+/* Testimonials */
+
+
+.title-testimonials{
+	font-weight: bold;
+	font-size: 2.7rem;
+}
+
+
+.quote-modern-text p {
+	color: black;
+}
 
 /* Footer */
 
