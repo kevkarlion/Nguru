@@ -808,7 +808,7 @@ html p a:hover {
         	justify-content: center;
         	align-items: center;
         	width: 100%;
-        	min-height: 37vh;
+        	min-height: 314px;
 
 	  }
 
@@ -834,7 +834,7 @@ html p a:hover {
     
 	  .zorrito-hero-container {
 		width: 100%;
-		min-height: 56vh;
+		min-height: 476px;
 		z-index: 10;
 	  }
 
@@ -857,7 +857,7 @@ html p a:hover {
 		position: relative;
 		top: -17%;
 		left: 1%;
-		border: 74px solid #1cb8d6;
+		border: 78px solid #1cb8d6;
 	  }
 
 	  .zorrito-hero{
