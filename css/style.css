@@ -119,6 +119,10 @@ html p a:hover {
 	min-height: 100% !important;
 }
 
+/* contenedor de cada section para separacion al navegar con la barra */
+.container {
+	padding-top: 30px;
+}
 .container-nav {
 	display: flex;
 	position: fixed;
@@ -126,8 +130,8 @@ html p a:hover {
 	left: 0;
 	background-color: white;
 	z-index: 50;
-	max-height: 130px;
-	min-height: 130px;
+	max-height: 88px;
+	min-height: 88px;
 	min-width: 850px;
 	width: 100%;
 }
@@ -142,13 +146,12 @@ html p a:hover {
 }
 
 .container-nav__logo img {
-	width: 86%;
-	height: auto;
+	width: 57%;
+    	height: auto;
 	display: inline-block;
 	position: relative;
-	top: -26px;
+	top: -12px;
 	padding-left: 50px;
-
 }
 
 .button-toggle-menu {
@@ -159,27 +162,60 @@ html p a:hover {
 
 .container-nav__ul {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: end;
 	width: 100%;
-	padding-right: 70px;
+	gap: 15px;
 	align-items: center;
+	padding-right: 35px;
+}
+
+.container-nav__li {
+	display: flex;
+    	justify-content: center;
+    	width: 87px;
 }
 
 .container-nav__ul li {
-	padding: .8rem;
+	display: flex;
+	justify-content: center;
 }
 
 .container-nav__ul li a {
-	font-size: 1.2rem;
+	font-size: .9rem;
 	font-weight: 400;
-	color: black ;
+	color: #1d1d1b ;
 }
+
+.container-nav__ul .contact-nav {	
+	background-color: #1cb8d6;
+	border-radius: 5px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	padding: .6rem 2rem;
+	min-width: 7.7rem;
+	max-width: 7.7rem;
+	max-height: 1.84rem;
+}
+.container-nav__ul .contact-nav a{
+	color: white !important;
+}
+
 .container-nav__ul li a:hover {
 	color: #1cb8d6;
 	font-weight: bold;
-	font-size: 1.2rem;
-
 }
+
+@media (min-width: 1100px) {
+	.container-nav__ul{
+		padding-left: 217px;
+	}
+}
+/* @media (max-width: 1100px){
+	.container-nav__ul{
+		padding-left: 96px;
+	}
+} */
 
 /* Media querie Nav */
 /* hasta 989px, aplica estos estilos*/
@@ -216,8 +252,8 @@ html p a:hover {
 	}
 
 	.container-button-toggle__container-figure img{
-		top: -7px;
-        	width: 100%;
+		top: 0px;
+        	width: 72%;
         	position: relative;
 	}
 	.container-button-toggle__secondary{
@@ -231,11 +267,8 @@ html p a:hover {
 
 	.button-toggle-menu {
 		display: block;
-		width: 30px;
-		height: 30px;
-
-		/* border: 1px solid	black; */
-		/* background-color: #007aff; */
+		width: 25px;
+		height: 25px;
 	}
 
 	.toggle-menu{
@@ -286,7 +319,7 @@ html p a:hover {
 
 	.menu-list-sidebar__items  a{
 		flex: 1;
-		color: black;
+		color: #1d1d1b;
 		background-color: transparent;
 		width: auto;
 		padding-left: 60px;
@@ -336,7 +369,7 @@ html p a:hover {
 	width: 100%;
 	height: auto;
 	background: linear-gradient(to bottom right, rgb(130 205 224) 50%, rgb(236 236 236) 50%);
-	margin-top: 45px;
+	padding-top: 70px;
 }
 
 .container-secondary-hero {
@@ -363,11 +396,12 @@ html p a:hover {
 
 .zorrito-hero-container {
 	flex: 1;
-	/* min-width: 600px; */
 	height: auto;
 	z-index: 10;
-	/* padding-right: 15px; */
 }
+
+
+
 .zorrito-hero-figure {
 	width: 100%;
 	height: auto;
@@ -375,40 +409,43 @@ html p a:hover {
 	height: 781px;
 }
 
+
 /* absolute al secondary-hero */
 .zorrito-hero{
 	position: absolute;
-	top: 11px;
+	top: 37px;
 	right: 4%;
 	width: 530px;
 	height: auto;
 	animation: slideUp 4s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 }
 
+
+/* Animacion Zorrito Hero */
+@keyframes slideUp {
+	0% {
+		transform: translateY(13%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+
 /* absolute al secondary-hero */
 .zorrito-hero__circle {
 	position: absolute;
-	top: 57px;
+	top: 91px;
 	right: 2%;
 	min-width: 540px;
 	min-height: 540px;
-	border: 169px solid #1cb8d6;
+	border: 178px solid #1cb8d6;
 	border-radius: 50%;
 	animation: scaleCircle 3s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 	box-shadow: 17px 9px 17px;
 	z-index: -10;
 }
 
-
-/* Animacion Zorrito Hero */
-@keyframes slideUp {
-	0% {
-		transform: translateY(100%);
-	}
-	100% {
-		transform: translateY(0);
-	}
-}
 
 
 /* Animacion Circulo zorrito */
@@ -440,14 +477,14 @@ html p a:hover {
 	.zorrito-hero__circle{
 		min-width: 390px;
         	min-height: 390px;
-        	top: 14%;
+        	/* top: 14%; */
         	right: -1%;
-        	border: 124px solid #1cb8d6;
+        	border: 120px solid #1cb8d6;
 	}
 
 	.zorrito-hero {
 		width: 438px;
-		top: 4%;
+		/* top: 4%; */
     		right: -2%;
 	}
 }
@@ -461,14 +498,14 @@ html p a:hover {
 	.zorrito-hero__circle{
 		min-width: 380px;
 		min-height: 380px;
-		top: 75px;
-		right: 3%;
+		/* top: 69px; */
+		right: 2%;
 		border: 116px solid #1cb8d6;
 	}
 
 	.zorrito-hero {
 		width: 438px;
-        	top: 7px;
+        	/* top: 7px; */
         	right: 1%;
 	}
 }
@@ -477,14 +514,14 @@ html p a:hover {
 	.zorrito-hero__circle{
 		min-width: 380px;
         	min-height: 380px;
-        	top: 68px;
+        	/* top: 68px; */
         	right: 1%;
-		border: 117px solid #1cb8d6;
+		border: 122px solid #1cb8d6;
 	}
 
 	.zorrito-hero {
 		width: 413px;
-		top: 20px;
+		/* top: 20px; */
 		right: 1%;
 	}
 }
@@ -524,7 +561,23 @@ html p a:hover {
 	}
 
 }
-@media (max-width: 630px) {
+@media (min-width: 628px) and (max-width:820px) {
+	.zorrito-hero__circle {
+		min-width: 300px;
+		min-height: 300px;
+		top: 88px;
+		right: 2%;
+		border: 94px solid #1CB8D6;
+	  }
+	  .zorrito-hero {
+		width: 323px;
+		top: 51px;
+		right: 2%;
+	  }
+}
+
+
+@media (max-width: 627px) {
 	
 	  .zorrito-hero {
 		width: 340px;
@@ -543,7 +596,8 @@ html p a:hover {
 	height: 100%;
 	padding-top: 6.06rem;
 	padding-left: 10px;   
-	align-self: flex-start;
+	padding-bottom: 47px;
+	align-self: center;
 }
 
 .text-hero {
@@ -553,9 +607,9 @@ html p a:hover {
 }
 
 .text-hero-h1 {
-	font-size: 4rem;
+	font-size: 3.8rem;
 	font-weight: bold;
-	color: black;
+	color: #1d1d1b;
 }
 
 
@@ -569,7 +623,7 @@ html p a:hover {
 	}
 
 	.container-text-hero {
-		min-width: 3.5rem;
+		min-width: 3.4rem;
 		padding-top: 1.06rem;
 	}
 
@@ -585,7 +639,7 @@ html p a:hover {
 		margin: 0;
 	}
 	.text-hero-h1{
-		font-size: 3.2rem;
+		font-size: 2.9rem;
 		
 	}
 
@@ -617,7 +671,7 @@ html p a:hover {
 
 @media (min-width: 820px) {
 	.container-main-hero {
-		padding-top: 35px;
+		padding-top: 70px;
 	}
 }
 
@@ -640,7 +694,7 @@ html p a:hover {
 }
 @media (max-width: 795px) {
 	.container-secondary-hero {
-		margin: 0px;
+		margin: 13px;
 	}
 }
 
@@ -648,7 +702,7 @@ html p a:hover {
 	.container-text-hero {
 		width: 96%;
 		padding-left: 0px;
-		padding-top: 0px
+		padding-top: 17px
 	  }
 	  
 	.text-hero-h1{
@@ -674,14 +728,7 @@ html p a:hover {
 
 /* END Text-HERO */
 
-@media (min-width: 630px) and (max-width: 820px) {
 
-	.container-main-hero {
-		padding-top: 45px;
-
-	}
-	
-}
 
 
 @media (max-width:629px) {
@@ -696,7 +743,6 @@ html p a:hover {
 		flex: 1;
 		position: static;
 		width: 100%;
-		padding: 0;
 	}
 
 	.text-hero {
@@ -751,8 +797,6 @@ html p a:hover {
 	  }
 
 	  .container-text-hero {
-
-		
 		position: static;
         	display: flex;
         	justify-content: center;
@@ -809,6 +853,31 @@ html p a:hover {
 		top: 17.62rem;
 		left: calc(50% - 181px);
 	  }
+
+	  .card-services{
+		margin-top: 20px;
+	  }
+
+
+	  .container-icon-services{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 80px;
+		height: 80px;
+		padding: 5px;
+		/* border: 1px solid black; */
+		background-color: #1CB8D6;
+		border-radius: 50%;
+	  }
+
+
+	  .container-icon-services img {
+		width: 76%;
+		height: auto;
+		object-fit:contain
+	  }
+
 }
 
 
@@ -821,6 +890,9 @@ html p a:hover {
 
 
 /* Nuestros Servicios */
+
+
+
 
 #services {
 	
@@ -838,6 +910,27 @@ html p a:hover {
 	font-size: 2.7rem;
 }
 
+
+.container-icon-services{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80px;
+	height: 80px;
+	padding: 5px;
+	/* border: 1px solid black; */
+	background-color: #1CB8D6;
+	border-radius: 50%;
+  }
+
+
+  .container-icon-services img {
+	width: 76%;
+	height: auto;
+	object-fit:contain
+  }
+
+
 .title-card-services {
 	font-weight: bold;
 	text-align: center;
@@ -845,7 +938,7 @@ html p a:hover {
 
 .card-services article {
 	display: flex;
-    	justify-content: center;
+    	justify-content: start;
     	align-items: center;
     	flex-direction: column;
 }
@@ -867,7 +960,7 @@ html p a:hover {
 /* Aboaut Us */
 
 .title-about-us {
-	color: #1CB8D6;
+	color: white;
 	font-weight: bold;
 	font-size: 2.7rem;
 }
@@ -878,7 +971,7 @@ html p a:hover {
 
 
 #about-us{
-	background-color: rgb(12 13 16);
+	background-color: #1d1d1b;
 	padding-top: 87px;
 }
 
@@ -932,25 +1025,39 @@ html p a:hover {
 
 
 .quote-modern-text p {
-	color: black;
+	color: #1d1d1b;
 }
 
 /* Footer */
 
-.container-footer__secondary{
+.container-main__footer {
 	display: flex;
-	width: auto;
 	justify-content: center;
 	align-items: center;
 }
 
+.container-footer__secondary{
+	display: flex;
+	width: auto;
+	justify-content: space-between;
+	align-items: start;
+}
+
 .container-redes {
 	display: flex;
-	flex: 1;
-	gap: 20px;
+	flex-direction: column;
+	/* flex: 1; */
+	/* gap: 20px; */
 	align-items: center;
-	width: 600px;
+	width: auto;
 	height: auto;
+}
+
+
+.container-redes__title-redes{
+	box-shadow: 0 0.7px #aeb1be;
+	padding-bottom: 15px;
+	/* border-bottom: .9px solid white; */
 }
 .container-redes__ul {
 	display: flex;
@@ -998,7 +1105,6 @@ html p a:hover {
 	border-radius: 50%;
 	width: 55px;
 	height: 55px;
-
 	top: 0;
 	left: 0;
 	box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
@@ -6035,7 +6141,7 @@ html:not(.tablet):not(.mobile) .thumbnail-indigo:hover .thumbnail-indigo-caption
 }
 
 .footer-linked.bg-gray-700 {
-	background-color: #252227;
+	background-color: #1d1d1b;
 }
 
 .footer-linked.bg-gray-700 h1, .footer-linked.bg-gray-700 h2, .footer-linked.bg-gray-700 h3, .footer-linked.bg-gray-700 h4, .footer-linked.bg-gray-700 h5, .footer-linked.bg-gray-700 h6, .footer-linked.bg-gray-700 [class^='heading-'] {
@@ -8556,6 +8662,18 @@ html [class*='section-'].section-bottom-0 {
 .footer-info-contacto {
 	display: flex;
 	align-items: center;
+}
+
+.dir-map{
+	display: flex !important;
+	align-items: start;
+	width: 100%;
+	height: auto;
+	flex-direction: column;
+}
+
+.dir-map a {
+	text-align: start;
 }
 
 .footer-info-contacto__anchor {
