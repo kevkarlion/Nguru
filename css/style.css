@@ -955,6 +955,28 @@ html p a:hover {
 	text-align: center;
 }
 
+.container__title-card-services{
+	display: flex;
+	width: 100%;
+	min-height: 90px;
+    	max-height: 90px;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	margin: 0;
+	
+}
+
+.card-services__p {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	flex: 1;
+}
+
 
 
 @media (max-width: 575px) {
