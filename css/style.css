@@ -129,6 +129,7 @@ html p a:hover {
 	top: 0;
 	left: 0;
 	background-color: white;
+	box-shadow: 1px 1px 5px;
 	z-index: 50;
 	max-height: 88px;
 	min-height: 88px;
@@ -600,16 +601,116 @@ html p a:hover {
 	align-self: center;
 }
 
+
+/* contenedor */
 .text-hero {
 	display: flex;
-	width: 94%;
+	width: 100%;
+	height: 100%;
 	text-transform: uppercase;
+	overflow-x:hidden;
+	z-index: 1;
 }
 
-.text-hero-h1 {
-	font-size: 3.8rem;
+
+.text-hero-h1__p1 {
+	font-size: 3.2rem;
+	width: auto;
 	font-weight: bold;
-	color: #1d1d1b;
+	animation: slideIn 4s linear 4s forwards;
+	z-index: 1;
+}
+
+
+@keyframes slideIn {
+	0%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+	
+	25%{
+		opacity: 1;
+		transform: translateX(-175px);
+	}
+	
+	50% {
+		opacity: 1;
+		transform: translateX(-350px);
+
+	}
+	
+	75% {
+		opacity: 1;
+		transform: translateX(-525px);
+
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(-700px);
+	}
+	
+}
+
+.text-hero-h1-p__infinit {
+	font-size: 3.2rem;
+	width: 100%;
+	height: 100%;
+	font-weight: bold;
+	animation: slideInfinit 10s linear infinite;
+	z-index: 1;
+}
+
+@keyframes slideInfinit {
+	0%{
+		transform: translateX(350px);
+	}
+	12.5% {
+		transform: translateX(0px);
+	}
+	25% {
+		transform: translateX(0px);
+	}
+	37.5% {
+		transform: translateX(0px);
+	}
+	50% {
+		transform: translateX(0px);
+	}
+	62.5% {
+		transform: translateX(-700px);
+	}
+	75%{
+		transform: translateX(-700px);
+	}
+	80% {
+		transform: translateX(-700px);
+	}
+	100% {
+		transform: translateX(-700px);
+	}
+}
+
+
+
+
+.text-hero-p2{
+	display: flex;
+	/* position: relative; */
+	width: 100%;
+	height: 100%;
+	text-transform: uppercase;
+	overflow-x:hidden;
+	z-index: 10;
+}
+
+.text-hero-h1__p2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 3.8rem;
+	width: 100%;
+	font-weight: bold;
+	z-index: 10;
 }
 
 
