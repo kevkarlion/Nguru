@@ -61,42 +61,26 @@ setInterval(cambiarTexto, 10000);
 
 const containerBtnSaberMas = document.querySelector('.container__saber-mas');
 const articleSaberMas = document.querySelector('#id-article-saber-mas');
+const btnSaberMasText = document.querySelector('#button__saber-mas');
 
+const toggleBtnSm = document.querySelector('.btnHidden');
 
-const btnSaberMas = document.querySelector('#button__saber-mas');
-const imgBtnSaberMas = document.querySelector('.container__zorrito-saber-mas');
-
-
-const hiddenMore = document.querySelector('.article-saber-mas__inactive');
-
-
-
-//Click Down
 containerBtnSaberMas.addEventListener('click', ()=>{
-      containerBtnSaberMas.classList.remove('container__saber-mas');
-      containerBtnSaberMas.classList.add('container__saber-mas-box-vacia');
-
-      btnSaberMas.classList.add('container__saber-mas__hidden');
-      imgBtnSaberMas.classList.add('container__saber-mas__hidden');
-
-
-      articleSaberMas.classList.remove('article-saber-mas__inactive');
-      articleSaberMas.classList.add('article-saber-mas__down');
+      articleSaberMas.classList.toggle('article-saber-mas__down');
+     
+      if ( articleSaberMas.classList.contains('article-saber-mas__inactive')) {
+            articleSaberMas.classList.remove('article-saber-mas__inactive');
+            articleSaberMas.classList.add('article-saber-mas__down');
+            toggleBtnSm.classList.add('toggle-btn-sm');
+      } else {
+            articleSaberMas.classList.remove('article-saber-mas__down');
+            toggleBtnSm.classList.remove('toggle-btn-sm');
+           
+            articleSaberMas.classList.add('article-saber-mas__inactive');
+      }
 })
 
 
-//Click  Up
-hiddenMore.addEventListener('click', ()=> {
-      containerBtnSaberMas.classList.remove('container__saber-mas-box-vacia');
-
-      btnSaberMas.classList.remove('container__saber-mas__hidden');
-      imgBtnSaberMas.classList.remove('container__saber-mas__hidden');
-
-
-      containerBtnSaberMas.classList.add('container__saber-mas');
-      articleSaberMas.classList.remove('article-saber-mas__down');
-      articleSaberMas.classList.add('article-saber-mas__inactive');
-})
 
 
 
