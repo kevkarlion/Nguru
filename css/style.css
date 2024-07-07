@@ -1027,6 +1027,10 @@ html p a:hover {
 }
 
 
+
+
+
+/* Styles btn Ocultar y saber mas */
 .container__saber-mas > a {
 	min-width: 240px;
 }
@@ -1034,7 +1038,6 @@ html p a:hover {
 	
 	color: white !important; 
 }
-
 
 .btnStyleTwins {
 	position: relative;
@@ -1049,6 +1052,10 @@ html p a:hover {
 
 
 
+
+
+
+
 #id-article-saber-mas h3{
 	color: white;
 }
@@ -1059,8 +1066,6 @@ html p a:hover {
 	color: #B0B0B0;
 	font-size: 1rem;
 }
-
-
 
 #id-article-saber-mas div:last-of-type p:last-of-type {
 	margin-bottom: 0px;
@@ -1086,9 +1091,6 @@ html p a:hover {
 	transform-origin: top;
 	transition: opacity 1s ease-in-out ,max-height 1s ease-in-out, transform-origin 1s ease;
 }
-
-
-/* ---------------------- */
 
 
 
@@ -1129,6 +1131,7 @@ html p a:hover {
 	width: 100%;
 	object-fit: contain;
 }
+
 
 
 
