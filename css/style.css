@@ -220,7 +220,7 @@ html p a:hover {
 
 /* Media querie Nav */
 /* hasta 989px, aplica estos estilos*/
-@media (max-width: 991px) {
+@media (max-width: 992px) {
 
 	.container-nav{
 		display: flex;
@@ -335,7 +335,7 @@ html p a:hover {
 
 }
 
-@media (min-width: 991px) {
+@media (min-width: 992px) {
 	.container-nav #dropdown-main  {
 		display: none;
 	}
@@ -1061,7 +1061,6 @@ html p a:hover {
 }
 
 #id-article-saber-mas p {
-
 	margin-bottom: 50px;
 	color: #B0B0B0;
 	font-size: 1rem;
@@ -1134,7 +1133,11 @@ html p a:hover {
 
 
 
-
+@media (max-width: 576px) {
+	#id-article-saber-mas p {
+		font-size: .87rem;
+	}
+}
 
 /* ---------------- */
 
@@ -1335,43 +1338,55 @@ html p a:hover {
 .container-redes {
 	display: flex;
 	flex-direction: column;
-	/* flex: 1; */
-	/* gap: 20px; */
-	align-items: center;
+	align-items: flex-start;
 	width: auto;
 	height: auto;
 }
 
 
-.container-redes__title-redes{
-	box-shadow: 0 0.7px #aeb1be;
-	padding-bottom: 15px;
-	/* border-bottom: .9px solid white; */
+.container-redes-contact__title {
+	display: flex;
+	justify-content: flex-start;
+	width: auto;
+	
 }
+
+.container-redes__ul{
+	margin-top: 25px;
+}
+
+.container-redes-contact__title h4 {
+	box-shadow: 0 0.8px 0 0 #74757f;
+	padding-bottom: 15px;
+	position: relative;
+}
+
 .container-redes__ul {
 	display: flex;
 	width: auto;
 	height: auto;
 	flex-direction: column;
-}
+} 
+
 .container-redes__li{
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	width: auto;
 	padding: 10px;
+	padding: 10px 10px 10px 0px;
 }
 
 .container-redes__li a {
 	display: flex;
 	align-items: center;
 }
+
 .container-redes__li svg {
 	width: 30px;
 	height: 30px;
 	margin-right: 20px;
 }
-
 
 .icon-whatsapp {
 	position: fixed;
@@ -1400,10 +1415,39 @@ html p a:hover {
 	background-color: rgba(255, 255, 255, 0.5); /* Fondo semitransparente para visualizar */
 	z-index: -1;
 }
+
 .icon-whatsapp img {
 	width: 100%;
 	height: 100%;
 }
+
+
+
+
+
+@media (max-width: 992px) {
+
+	.container-footer__secondary {
+		display: flex;
+		flex-direction: column;
+		gap: 4rem;
+	}
+
+	.container-footer__secondary > div {
+		padding: 0;
+	}
+
+	.container-footer__secondary div:last-child {
+		display: flex;
+		flex-direction: column;
+		width: auto;
+	}
+}
+
+
+
+
+/* FOTER END------------ */
 
 
 /*
