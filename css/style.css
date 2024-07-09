@@ -369,7 +369,7 @@ html p a:hover {
 	justify-content: center;
 	width: 100%;
 	height: auto;
-	background: linear-gradient(to bottom right, rgb(130 205 224) 50%, rgb(236 236 236) 50%);
+	/* background: linear-gradient(to bottom right, rgb(130 205 224) 50%, rgb(236 236 236) 50%); */
 	padding-top: 70px;
 }
 
