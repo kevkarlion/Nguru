@@ -27,31 +27,31 @@ buttonToggleMenu.addEventListener('click', function() {
 //Animacion h1 Hero
 
 
-const textHeroOne = document.querySelector('.selector-text-hero');
-let toggle = true;
+// const textHeroOne = document.querySelector('.selector-text-hero');
+// let toggle = true;
 
 
-const cambiarTexto = ()=> {
-      if (toggle) {
-            textHeroOne.style.fontSize = '2.1rem';
-            textHeroOne.textContent = '"Hagamos algo extraordinario"';
-      }else {
-            textHeroOne.textContent = '"Todos tenemos una historia para contar, tu empresa también"';
-      }     
-      toggle = !toggle;
-}
+// const cambiarTexto = ()=> {
+//       if (toggle) {
+//             textHeroOne.style.fontSize = '2.1rem';
+//             textHeroOne.textContent = '"Hagamos algo extraordinario"';
+//       }else {
+//             textHeroOne.textContent = '"Todos tenemos una historia para contar, tu empresa también"';
+//       }     
+//       toggle = !toggle;
+// }
 
 
 //Cambia la clase, 1 vez para cambiar la animacion
-setTimeout(()=>{
-      textHeroOne.classList.remove('text-hero-h1__p1');
-      textHeroOne.classList.add('text-hero-h1-p__infinit');
+// setTimeout(()=>{
+//       textHeroOne.classList.remove('text-hero-h1__p1');
+//       textHeroOne.classList.add('text-hero-h1-p__infinit');
       
-}, 10000);
+// }, 10000);
 
 
 //Intervalos para cambiar el texto
-setInterval(cambiarTexto, 10000);
+// setInterval(cambiarTexto, 10000);
 
 
 
