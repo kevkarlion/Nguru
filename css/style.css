@@ -370,14 +370,15 @@ html p a:hover {
 	width: 100%;
 	height: 740px;
 	padding-top: 70px;
-	background-image: url('../images/bck-nubes.jpg');
+	position: relative;
+	background-color: #f5f6fa;
+	background-image: url('../images/bk-icos-gris.png');
 	background-size: cover;
 	background-position: center;
-	background-attachment: fixed;
 	background-repeat: no-repeat;
-
-
 }
+
+
 
 .container-secondary-hero {
 	display: flex;
@@ -388,6 +389,7 @@ html p a:hover {
 	padding: 0 50px;
 	width: 100%;
 	height: 100%;
+	
 }
 
 .container-secondary-hero > div:nth-child(2) {
@@ -430,14 +432,14 @@ html p a:hover {
 	right: 1%;
 	width: 421px;
 	height: auto;
-	animation: slideUp 4s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+	animation: slideUp 2s cubic-bezier(.34,.86,.62,1) forwards;
 }
 
 
 /* Animacion Zorrito Hero */
 @keyframes slideUp {
 	0% {
-		transform: translateY(13%);
+		transform: translateY(25%);
 	}
 	100% {
 		transform: translateY(0);
@@ -449,10 +451,10 @@ html p a:hover {
 .zorrito-hero__circle {
 	position: absolute;
 	top: 91px;
-	right: -1%;
+	right: -1.5%;
 	min-width: 450px;
 	min-height: 450px;
-	border: 160px solid #1cb8d6;
+	border: 139px solid #1cb8d6;
 	border-radius: 50%;
 	animation: scaleCircle 3s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 	box-shadow: 3px 3px 25px black;
@@ -616,22 +618,41 @@ html p a:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
 	width: 100%;
-	height: auto;
+	height: 100%;
 	overflow:hidden;
 	padding-bottom: 34px;
+	
+}
+
+.text-hero > div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 670px;
+	background-color: white;
+	opacity: .6;
+	z-index: 10;
 }
 
 
-.text-hero-h1__p1 {
-	font-family: "Great Vibes", cursive !important;
-  	font-weight: 400 !important;
-  	font-style: normal !important;
-	font-size: 6rem;
-	color: black;
+.text-hero-h1__p1 { 
+	font-family: "Playfair Display", serif !important;
+  	font-optical-sizing: auto;
+  	font-weight: weight;
+  	font-style: normal;
+	z-index: 20;
+	position: absolute;
+	top: 18%;
+	left: 0;
+	font-size: 4rem;
+	color: #29293a;
+	border-radius: 15px;
 	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 	overflow: hidden;
-	width: 75%;
+	width: 100%;
 	height: auto;
 	text-align: center;
 	font-weight: bold;
@@ -1179,8 +1200,8 @@ html p a:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 80px;
-	height: 80px;
+	width: 90px;
+	height: 90px;
 	padding: 5px;
 	background-color: transparent;
 	position: relative;
@@ -1189,8 +1210,8 @@ html p a:hover {
 
   .container-icon-services > div {
 	position: absolute;
-	width: 80px;
-	height: 80px;
+	width: 90px;
+	height: 90px;
 	top: 0;
 	left: 0;
 	border-radius: 50%;
@@ -1203,7 +1224,7 @@ html p a:hover {
   .container-icon-services img {
 	position: absolute;
 	z-index: 10;
-	width: 76%;
+	width: 63%;
 	height: auto;
 	object-fit:contain
   }
@@ -1334,9 +1355,43 @@ html p a:hover {
 /* Testimonials */
 
 
+.container-titles-testimonios{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: auto;
+	gap: 10px;
+	margin-bottom: 10px;
+}
+
 .title-testimonials{
 	font-weight: bold;
 	font-size: 2.7rem;
+	position: relative;
+}
+
+.title-testimonials::before{
+	content: '';
+	position: absolute;
+	bottom: -4px;
+	left: 73px;
+	border: solid 1px black;
+	width: 80%;
+}
+
+.title-testimonials__subtitle {
+	font-size: .7rem;
+	font-weight: bold;
+	
+	width: auto;
+	padding: 0px 10px;
+	/* padding-right: 98px; */
+	text-transform: uppercase;
+	background-color: #1CB8D6;
+	color: white;
+	border-radius: 5px;
+	margin-right: 95px;
+
 }
 
 
@@ -1367,20 +1422,28 @@ html p a:hover {
 	height: auto;
 }
 
+.container-redes-contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
 
 .container-redes-contact__title {
 	display: flex;
 	justify-content: flex-start;
 	width: auto;
-	
+}
+.container-footer__ul {
+	margin-top: 25px !important;
 }
 
-.container-redes__ul{
-	margin-top: 25px;
-}
+
 
 .container-redes-contact__title h4 {
-	box-shadow: 0 0.8px 0 0 #74757f;
+	border-bottom: 1px solid #74757f;
+
 	padding-bottom: 15px;
 	position: relative;
 }
@@ -1399,6 +1462,7 @@ html p a:hover {
 	width: auto;
 	padding: 10px;
 	padding: 10px 10px 10px 0px;
+	margin-bottom: 15px;	
 }
 
 .container-redes__li a {
@@ -1445,7 +1509,39 @@ html p a:hover {
 	height: 100%;
 }
 
+.footer-info-contacto {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: auto;
+	padding: 10px;
+	padding: 10px 10px 10px 0px;
+	margin-bottom: 15px;	
+}
 
+.footer-info-contacto__container-qr {
+	width: 60px;
+	height: 60px;
+	background-color: white;
+	margin-top: 25px;
+}
+
+.footer-icon__phone {
+	width: 30px;
+	height: 30px;
+}
+
+.footer-icon__phone > img {
+	width: 100%;
+}
+
+
+
+#icon-phone {
+	width: 30px;
+	height: 30px;
+	fill: white;
+}
 
 
 
@@ -8002,7 +8098,7 @@ h3 + .owl-carousel, .heading-3 + .owl-carousel {
 		margin-top: 34px;
 	}
 	* + .row {
-		margin-top: 40px;
+		margin-top: 68px;
 	}
 	* + .text-block {
 		margin-top: 30px;
@@ -9016,13 +9112,7 @@ html [class*='section-'].section-bottom-0 {
 	white-space: nowrap;
 }
 
-.footer-info-contacto {
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-	margin-top: 25px !important;
 
-}
 
 .dir-map{
 	display: flex !important;
