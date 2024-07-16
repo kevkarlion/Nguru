@@ -370,18 +370,15 @@ html p a:hover {
 	width: 100%;
 	height: 740px;
 	padding-top: 70px;
-	background-image: url('../images/hero-4.png');
+	position: relative;
+	background-color: #f5f6fa;
+	background-image: url('../images/bk-icos-gris.png');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	/* background-image: url('../images/bck-hero-1.png');
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	background-repeat: no-repeat; */
-
-
 }
+
+
 
 .container-secondary-hero {
 	display: flex;
@@ -454,10 +451,10 @@ html p a:hover {
 .zorrito-hero__circle {
 	position: absolute;
 	top: 91px;
-	right: -1%;
+	right: -1.5%;
 	min-width: 450px;
 	min-height: 450px;
-	border: 160px solid #1cb8d6;
+	border: 139px solid #1cb8d6;
 	border-radius: 50%;
 	animation: scaleCircle 3s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 	box-shadow: 3px 3px 25px black;
@@ -623,7 +620,6 @@ html p a:hover {
 	align-items: center;
 	position: relative;
 	width: 100%;
-	
 	height: 100%;
 	overflow:hidden;
 	padding-bottom: 34px;
@@ -642,18 +638,17 @@ html p a:hover {
 }
 
 
-.text-hero-h1__p1 {
+.text-hero-h1__p1 { 
+	font-family: "Playfair Display", serif !important;
+  	font-optical-sizing: auto;
+  	font-weight: weight;
+  	font-style: normal;
 	z-index: 20;
 	position: absolute;
 	top: 18%;
 	left: 0;
-	/* font-family: "Great Vibes", cursive !important;
-  	font-weight: 400 !important;
-  	font-style: normal !important; */
 	font-size: 4rem;
-	
-	color: black;
-	
+	color: #29293a;
 	border-radius: 15px;
 	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 	overflow: hidden;
@@ -1360,9 +1355,43 @@ html p a:hover {
 /* Testimonials */
 
 
+.container-titles-testimonios{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: auto;
+	gap: 10px;
+	margin-bottom: 10px;
+}
+
 .title-testimonials{
 	font-weight: bold;
 	font-size: 2.7rem;
+	position: relative;
+}
+
+.title-testimonials::before{
+	content: '';
+	position: absolute;
+	bottom: -4px;
+	left: 73px;
+	border: solid 1px black;
+	width: 80%;
+}
+
+.title-testimonials__subtitle {
+	font-size: .7rem;
+	font-weight: bold;
+	
+	width: auto;
+	padding: 0px 10px;
+	/* padding-right: 98px; */
+	text-transform: uppercase;
+	background-color: #1CB8D6;
+	color: white;
+	border-radius: 5px;
+	margin-right: 95px;
+
 }
 
 
@@ -8069,7 +8098,7 @@ h3 + .owl-carousel, .heading-3 + .owl-carousel {
 		margin-top: 34px;
 	}
 	* + .row {
-		margin-top: 40px;
+		margin-top: 68px;
 	}
 	* + .text-block {
 		margin-top: 30px;

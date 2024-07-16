@@ -19,6 +19,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"   rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
 
@@ -108,20 +112,23 @@
       </header>
       <!-- Contenido deL Hero -->
       <div class="container-main-hero">
-        <div class="container-secondary-hero">
-          <div class="container-text-hero">
-            <div class="text-hero">
-             
-              <h1 class="text-hero-h1-p  text-hero-h1__p1 selector-text-hero">"Todos tenemos una historia para contar, tu empresa también"</h1>
+      
+
+          <div class="container-secondary-hero">
+            <div class="container-text-hero">
+              <div class="text-hero">
+               
+                <h1 class="text-hero-h1-p  text-hero-h1__p1 selector-text-hero">"Todos tenemos una historia para contar, tu empresa también"</h1>
+              </div>
+            </div>
+            <div class="zorrito-hero-container">
+              <figure class="zorrito-hero-figure">
+                <div class="zorrito-hero__circle zorrito-circle"></div>
+                <img class="zorrito-hero zorrito-circle" src='./images/zorrito-hero-modified.png' alt="">
+              </figure>
             </div>
           </div>
-          <div class="zorrito-hero-container">
-            <figure class="zorrito-hero-figure">
-              <div class="zorrito-hero__circle zorrito-circle"></div>
-              <img class="zorrito-hero zorrito-circle" src='./images/zorrito-hero-modified.png' alt="">
-            </figure>
-          </div>
-        </div>
+         
         </div>
     
       <!-- Our Services-->
@@ -324,7 +331,7 @@
               <h3 class="wow-outer"><span class="wow slideInDown title-about-us">Unas palabras sobre nosotros</span></h3>
 
 
-              <p class="wow-outer"><span class="wow slideInDown p-about-us" data-wow-delay=".05s">Ngürü es una agencia de publicidad y marketing, comprometida en crear marcas que inspiren y conecten con audiencias de manera auténtica y significativa. Con un enfoque en la creatividad, la colaboración y la responsabilidad social.</span></p>
+              <p class="wow-outer"><span class="wow slideInDown p-about-us" data-wow-delay=".05s">En Ngürü, somos apasionados por crear marcas que realmente importan. Nuestro equipo se dedica a construir conexiones auténticas entre las empresas y sus audiencias. Nos esforzamos por entender profundamente a nuestros clientes y sus necesidades, utilizando la creatividad y la innovación para desarrollar soluciones que inspiren y destaquen en el mercado</span></p>
               <p class="wow-outer"><span class="wow slideInDown p-about-us" data-wow-delay=".1s">Nos posicionamos como un socio estratégico que guía a las empresas hacia una conexión profunda con sus clientes, generando mayores niveles de compromiso y atractivo de talento.</span></p>
 
 
@@ -333,20 +340,15 @@
               <article >
                 <div id="id-article-saber-mas" class="article-saber-mas__inactive">
                   <div>
-                    <h3>Nuestra Misión y Valores</h3>
-                    <p>En Ngürü, nuestra misión es transformar ideas en realidades que no solo impacten el mercado, sino también la vida de las personas. Creemos que cada marca tiene una historia única que merece ser contada, y nos dedicamos a descubrir y amplificar esas historias a través de estrategias innovadoras y creativas.</p>
+                    <h3>Socios Comprometidos con la Excelencia</h3>
+                    <p>Al trabajar con nosotros, encontrarás un socio comprometido con la excelencia, que valora la autenticidad y la confianza en cada interacción. Nos movemos con agilidad y empatía, asegurándonos de que cada proyecto no solo cumpla con tus expectativas, sino que también aporte un impacto positivo y duradero.</p>
                   </div>
                   <div>
-                    <h3>Colaboración y Transparencia</h3>
-                    <p>Valoramos profundamente la colaboración tanto dentro de nuestro equipo como con nuestros clientes. Creemos que las mejores ideas nacen de la combinación de diferentes perspectivas y habilidades. Mantenemos una comunicación abierta y transparente en cada paso del proceso, asegurando que nuestros clientes estén siempre informados y satisfechos.</p>
+                    <h3>Conexión Significativa con tu Audiencia</h3>
+                    <p>Nuestro objetivo es ayudarte a alcanzar una conexión significativa con tu audiencia, impulsando tu marca hacia nuevos horizontes y fortaleciendo tu presencia en el mercado. Juntos, podemos transformar tu visión en realidad, creando marcas que no solo se vean bien, sino que también resuenen y generen un cambio verdadero.</p>
                   </div>
-                  <div>
-                    <h3>Responsabilidad Social y Sostenibilidad</h3>
-                    <p>Nos enorgullecemos de ser una agencia que no solo busca resultados comerciales, sino también un impacto positivo en la sociedad y el medio ambiente. Nos comprometemos a prácticas sostenibles y apoyamos causas que reflejan nuestros valores de responsabilidad social.</p>
-                  </div>
+                  
                 </div>
-
-
                 <!-- Btn slider Saber mas version -->
                 <div class="wow-outer button-outer container__saber-mas">
                   <a 
@@ -423,7 +425,10 @@
       <!-- Testimonials-->
       <section class="section section-lg bg-gray-100" id="testimonials" data-type="anchor">
         <div class="container">
-          <h3 class="text-center title-testimonials">Testimonios</h3>
+          <div class="container-titles-testimonios">
+            <h3 class="title-testimonials__subtitle">Historias de éxito</h3>
+            <h2 class="text-center title-testimonials">Testimonios</h2>
+          </div>
           <div class="row row-50 justify-content-center justify-content-lg-between">
             <div class="col-md-10 col-lg-5">
               <div class="owl-carousel" data-items="1" data-dots="true" data-nav="false" data-loop="true" data-margin="30" data-stage-padding="0" data-mouse-drag="false">
@@ -433,14 +438,14 @@
                       <path d="M27.461,10.206h7.5v15h-15v-15L25,0.127h7.5L27.461,10.206z M7.539,10.206h7.5v15h-15v-15L4.961,0.127h7.5                L7.539,10.206z"></path>
                     </svg>
                     <div class="quote-modern-text">
-                      <p>Confiamos en NGURU por su experiencia en marketing digital, especialmente en las áreas de SEO y marketing en redes sociales. Su equipo es experto, receptivo y comprometido con apoyar nuestras iniciativas, lo que los convierte en socios invaluables en nuestro esfuerzo por promover nuestra empresa.</p>
+                      <p>La agencia superó con creces mis expectativas. Su equipo creativo captó perfectamente mi visión y logró plasmarla de manera excepcional. Desde el primer contacto, demostraron un alto nivel de profesionalismo y compromiso con el proyecto. El resultado final no solo cumplió con lo que había solicitado, sino que lo llevó a un nivel superior, superando todas mis expectativas. Recomiendo encarecidamente sus servicios a cualquier persona que busque calidad y creatividad</p>
                     </div>
                     <div class="quote-modern-meta">
                       <div class="quote-modern-avatar"><img src="images/testimonials-person-3-96x96.jpg" alt="" width="96" height="96"/>
                       </div>
                       <div class="quote-modern-info">
-                        <cite class="quote-modern-cite">Albert Webb</cite>
-                        <p class="quote-modern-caption">CEO at Majestic</p>
+                        <cite class="quote-modern-cite">Walter Daniel Carrión</cite>
+                        <p class="quote-modern-caption">Conductor, Poductor de TV, Asesor de imagen</p>
                       </div>
                     </div>
                   </blockquote>
