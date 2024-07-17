@@ -1447,16 +1447,15 @@ html p a:hover {
 
 .title-testimonials__subtitle {
 	font-size: .7rem;
-    width: auto;
-    padding: 3px 6px;
-    text-transform: uppercase;
-    background-color: #1CB8D6;
-    color: white;
-    margin-right: 154px;
-    transform: scale(1, 1.09);
-    transform-origin: left;
-    font-weight: bold;
-
+	width: auto;
+	padding: 3px 6px;
+	text-transform: uppercase;
+	background-color: #1CB8D6;
+	color: white;
+	margin-right: 192px;
+	transform: scale(1, 1.09);
+	transform-origin: left;
+	font-weight: bold;
 }
 
 
