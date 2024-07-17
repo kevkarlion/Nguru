@@ -183,8 +183,8 @@ html p a:hover {
 
 .container-nav__ul li a {
 	font-size: .9rem;
-	font-weight: 400;
-	color: #1d1d1b ;
+	font-weight: bold;
+	color: rgb(41, 41, 58);
 }
 
 .container-nav__ul .contact-nav {
@@ -212,11 +212,7 @@ html p a:hover {
 		padding-left: 217px;
 	}
 }
-/* @media (max-width: 1100px){
-	.container-nav__ul{
-		padding-left: 96px;
-	}
-} */
+
 
 /* Media querie Nav */
 /* hasta 989px, aplica estos estilos*/
@@ -379,10 +375,12 @@ html p a:hover {
 	width: 100%;
 	height: 100%;
 	background-color: #f5f6fa;
-	background-image: url('../images/bck-hero-3.png');
+	/* background-image: url('../images/bck-hero-3.png');
 	background-size: cover;
 	background-position: center;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; */
+	background: rgb(255,255,255);
+	background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(165,227,239,1) 0%, rgba(28,184,214,1) 59%);
 }
 
 
@@ -574,50 +572,53 @@ html p a:hover {
 
 /* contenedor */
 .text-hero {
-	display: flex;
+	display: grid;
+	grid-template-rows: repeat(3, auto);
 	justify-content: center;
 	align-items: center;
-	position: relative;
-	width: 100%;
+	width: 72%;
 	height: 100%;
-	/* overflow:hidden; */
-	padding-bottom: 34px;
-	
+	overflow:hidden;
+	padding-left: 45px;
+	padding-bottom: 134px;
+	gap: 20px;
 }
 
-.text-hero > div {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 670px;
-	background-color: white;
-	opacity: .6;
-	z-index: 10;
+.text-hero-h1 {
+	font-size: 2.5rem;
+	font-family: "Roboto Slab", serif !important;
+  	font-optical-sizing: auto;
+  	font-weight: 400;
+  	font-style: normal;
+	color: rgb(41, 41, 58);
 }
 
+.text-hero-h1 > span {
+	font-weight: bold;
+	color: #ff6f61;
+}
 
-.text-hero-h1__p1 { 
-	font-family: "Libre Baskerville", serif !important;
-	font-weight: 400;
-	font-style: italic;
-	line-height: 1.7;
-	z-index: 20;
-	
-	font-size: 4rem;
+.text-hero-h2 {
+	font-weight: bold;
+	font-size: 1.3rem;
+	color: rgb(41, 41, 58);
+}
+
+.text-hero-button {
+	display: flex !important;
+	justify-content: center;
+	font-size: .7rem !important;
+	width: 280px !important;
+	text-align: center !important;
+	max-width: fit-content;
+	background-color: #ff6f61 !important; 
 	color: white;
+	padding: 0px 15px;
 	border-radius: 15px;
-	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-	
-	min-width: 725px;
-	width: 725px;
-	max-width: 725px;
-	min-height: 350px;
-	height: 350px;
-	max-height: 350px;
-	text-align: center;
-	margin-top: 29px;
-	margin-left: 15%;
+}
+
+.text-hero-button:hover{
+	background-color:#cf5a4e !important;
 }
 
 @media (max-width: 1488px) {
