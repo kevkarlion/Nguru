@@ -493,7 +493,7 @@ html p a:hover {
 	height: 100%;
 	min-width: 500px;
 	justify-content: center;
-	align-items: center;
+	align-items: self-start;
 	flex: 1.5;
 }
 
@@ -570,6 +570,21 @@ html p a:hover {
 		min-width: 435px;
 		min-height: 435px;
 	}
+
+	.text-hero {
+		height: 88%;
+	}
+
+}
+
+@media (max-width: 1119px) {
+	.zorrito-hero__circle{
+		top: 51px;
+	}
+	.zorrito-hero {
+		top: -1px;
+	}
+
 }
 
 /* responsive mobile */
