@@ -165,7 +165,7 @@ html p a:hover {
 	display: flex;
 	justify-content: end;
 	width: 100%;
-	gap: 15px;
+	gap: 34px;
 	align-items: center;
 	padding-right: 35px;
 }
@@ -173,7 +173,7 @@ html p a:hover {
 .container-nav__li {
 	display: flex;
     	justify-content: center;
-    	width: 87px;
+    	width: auto;
 }
 
 .container-nav__ul li {
@@ -182,28 +182,40 @@ html p a:hover {
 }
 
 .container-nav__ul li a {
-	font-size: 1rem;
+	text-transform: uppercase;
+	font-size: .7rem;
+	font-weight: bold;
 	color: rgb(41, 41, 58);
 }
 
 .container-nav__ul .contact-nav {
-	background-color: #1cb8d6;
+	display: flex;
 	border-radius: 5px;
 	justify-content: center;
 	align-items: center;
-	display: flex;
-	padding: .6rem 2rem;
-	min-width: 7.7rem;
-	max-width: 7.7rem;
+	padding: 10px 13px 14px 20px;
 	max-height: 1.84rem;
+	width: auto;
+	background-color: #1cb8d6;
 }
+
+
 .container-nav__ul .contact-nav a{
 	color: white !important;
+	display: inline-block !important;
+}
+
+.container-nav__ul .contact-nav a > div {
+	display: inline;
+    	position: relative;
+   	top: 3px;
 }
 
 .container-nav__ul li a:hover {
 	color: #1cb8d6;
 }
+
+
 
 @media (min-width: 1100px) {
 	.container-nav__ul{
@@ -1410,14 +1422,14 @@ html p a:hover {
 }
 
 .title-testimonials__subtitle {
-	font-size: .9rem;
-	font-weight: bold;
+	font-size: .7rem;
+	/* font-weight: bold; */
 	width: auto;
-	padding: 0px 10px;
+	padding: 3px 5px;
 	text-transform: uppercase;
 	background-color: #1CB8D6;
 	color: white;
-	border-radius: 5px;
+	/* border-radius: 5px; */
 	margin-right: 154px;
 
 }
