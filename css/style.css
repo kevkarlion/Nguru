@@ -182,8 +182,7 @@ html p a:hover {
 }
 
 .container-nav__ul li a {
-	font-size: .9rem;
-	font-weight: bold;
+	font-size: 1rem;
 	color: rgb(41, 41, 58);
 }
 
@@ -204,7 +203,6 @@ html p a:hover {
 
 .container-nav__ul li a:hover {
 	color: #1cb8d6;
-	font-weight: bold;
 }
 
 @media (min-width: 1100px) {
