@@ -128,7 +128,7 @@ html p a:hover {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: white;
+	background-color: #ebecf0;
 	box-shadow: 1px 1px 5px;
 	z-index: 50;
 	max-height: 88px;
@@ -236,7 +236,7 @@ html p a:hover {
 		padding-left: 11px;
 		padding-bottom: 10px;
 		border-bottom: 1px solid rgb(171, 177, 191);
-		background-color: white;
+		background-color: #ebecf0;
 		box-shadow: 0px 0px 10px;
 
 	}
@@ -256,7 +256,7 @@ html p a:hover {
 	.container-button-toggle__secondary{
 		display:inline-block;
 		position: relative;
-		background-color: white;
+		background-color: #ebecf0;
 		top: 13px;
 		left: 0;
 		padding: 0 15px;
@@ -275,7 +275,7 @@ html p a:hover {
 		border-bottom: 1px solid rgb(171, 177, 191);
 		border-right: 1px solid rgb(171, 177, 191);
 		border-radius: 5px;
-		background-color: white;
+		background-color: #ebecf0;
 		width: auto;
 		transform: translateX(0);
 		transition: transform .3s ease;
@@ -516,7 +516,9 @@ html p a:hover {
   	font-optical-sizing: auto;
   	font-weight: 400;
   	font-style: normal;
-	color: rgb(41, 41, 58);
+	/* color: rgb(41, 41, 58); */
+	/* color: white; */
+	color: #ebecf0;
 }
 
 .text-hero-h1 > span {
@@ -525,10 +527,14 @@ html p a:hover {
 }
 
 .text-hero-h2 {
-	/* font-weight: bold; */
 	font-size: 1.3rem;
-	color: rgb(41, 41, 58);
+	color: #ebecf0;
 	width: 77%;
+}
+
+.text-hero-h2 > span {
+	color: #ff6f61;
+	font-weight: bold;
 }
 
 .text-hero-button {
@@ -541,6 +547,7 @@ html p a:hover {
 	background-color: #ff6f61 !important;
 	color: white;
 	padding: 0px 15px;
+	border: none !important;
 	/* border-radius: 15px !important; */
 }
 
