@@ -159,7 +159,10 @@ html p a:hover {
 	display: none;
 }
 
-
+.hvr-underline-from-center:before {
+	background: #1cb8d6;
+	height: 1px;
+}
 
 .container-nav__ul {
 	display: flex;
@@ -215,7 +218,10 @@ html p a:hover {
 	color: #1cb8d6;
 }
 
-
+.contact-nav  .hvr-underline-from-center::before {
+	background: white;
+	
+}
 
 @media (min-width: 1100px) {
 	.container-nav__ul{
