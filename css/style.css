@@ -1385,6 +1385,25 @@ html p a:hover {
 	background-color: #ebecf0;
 }
 
+.container-titles-our-team{
+	display: flex;
+	flex-direction: column;
+	align-items: self-start;
+	width: auto;
+
+	margin-bottom: 10px;
+}
+
+
+.title-our-team__subtitle {
+	font-size: .7rem;
+	width: 152px;
+	padding: 3px 5px;
+	text-transform: uppercase;
+	background-color: #1CB8D6;
+	color: white;
+	margin-right: 154px;
+}
 
 
 .title-our-team{
@@ -1468,7 +1487,6 @@ html p a:hover {
 	flex-direction: column;
 	align-items: self-start;
 	width: auto;
-	gap: 10px;
 	margin-bottom: 10px;
 }
 
