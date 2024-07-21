@@ -1473,14 +1473,7 @@ html p a:hover {
 }
 
 
-.title-testimonials::before{
-	content: '';
-	position: absolute;
-	bottom: -4px;
-	left: 73px;
-	border: solid 1px black;
-	width: 80%;
-}
+
 
 .title-testimonials__subtitle {
 	font-size: .7rem;
