@@ -520,7 +520,6 @@ html p a:hover {
 }
 
 .text-hero-h1 > span {
-	font-weight: bold;
 	color: #ff6f61;
 }
 
@@ -528,6 +527,13 @@ html p a:hover {
 	font-size: 1.3rem;
 	color: #ebecf0;
 	width: 77%;
+	font-weight: bold;
+}
+
+.text-hero-h2 > span {
+	color: #ff6f61;
+	font-weight: bold;
+	display: inline;
 }
 
 .text-hero-h2 > span {
