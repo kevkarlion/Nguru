@@ -151,8 +151,8 @@ html p a:hover {
     	height: auto;
 	display: inline-block;
 	position: relative;
-	top: -12px;
-	padding-left: 50px;
+	top: 2px;
+	left: 17px;
 }
 
 .button-toggle-menu {
@@ -265,8 +265,7 @@ html p a:hover {
 	}
 
 	.container-button-toggle__container-figure img{
-		top: 0px;
-        	width: 72%;
+		top: 3px;
         	position: relative;
 	}
 	.container-button-toggle__secondary{
@@ -616,7 +615,7 @@ html p a:hover {
 	.container-main-hero{
 		max-height: 1400px;
 		height: 100%;
-		padding-top: 86px;
+		padding-top: 79px;
 	}
 
 	.container-main-hero > div {
