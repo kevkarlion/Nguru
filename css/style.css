@@ -168,7 +168,8 @@ html p a:hover {
 	display: flex;
 	justify-content: end;
 	width: 100%;
-	gap: 27px;
+	min-width: 635px;
+	gap: 20px;
 	align-items: center;
 	padding-right: 35px;
 }
@@ -186,6 +187,7 @@ html p a:hover {
 
 .container-nav__ul li a {
 	text-transform: uppercase;
+	white-space: nowrap;
 	font-size: .7rem;
 	font-weight: bold;
 	color: rgb(41, 41, 58);
