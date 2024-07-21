@@ -1381,6 +1381,9 @@ html p a:hover {
 
 /* Our-team */
 
+#our-team {
+	background-color: #ebecf0;
+}
 
 
 
@@ -1414,6 +1417,7 @@ html p a:hover {
 }
 
 .card-body {
+	background-color: #ebecf0;
 	display: flex;
 	padding: 10px 5px;
 	flex-direction: column;
