@@ -267,14 +267,14 @@ html p a:hover {
 	}
 
 	.container-button-toggle__container-figure img{
-		top: 3px;
+		top: -7px;
         	position: relative;
 	}
 	.container-button-toggle__secondary{
 		display:inline-block;
 		position: relative;
 		background-color: #ebecf0;
-		top: 13px;
+		top: 1px;
 		left: 0;
 		padding: 0 15px;
 	}
