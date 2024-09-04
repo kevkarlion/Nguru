@@ -1422,7 +1422,7 @@ html p a:hover {
 
 .container-our-team {
 	/* gap: 17px; */
-	justify-content: space-between;
+	justify-content: center;
 	flex-wrap: wrap;
 	margin: 35px 20px 50px 20px;
 }	
@@ -1467,9 +1467,12 @@ html p a:hover {
 }
 
 
-@media (max-width: 768px) {
+
+
+
+@media (min-width: 768px) {
 	.container-our-team {
-		justify-content: center;
+		justify-content: space-between !important;
 	}
 }
 
