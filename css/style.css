@@ -274,15 +274,18 @@ html p a:hover {
 		display:inline-block;
 		position: relative;
 		background-color: #ebecf0;
-		top: 1px;
+		top: -10px;
 		left: 0;
 		padding: 0 15px;
 	}
 
 	.button-toggle-menu {
 		display: block;
-		width: 25px;
-		height: 25px;
+		width: 50px;
+		height: 50px;
+		border: none;
+		padding: 0px;
+		
 	}
 
 	.toggle-menu{
@@ -377,11 +380,9 @@ html p a:hover {
 /* HERO */
 
 .container-main-hero {
-
 	width: 100%;
 	height: 800px;
 	padding-top: 20px;
-
 }
 
 
@@ -621,7 +622,7 @@ html p a:hover {
 	.container-main-hero{
 		max-height: 1400px;
 		height: 100%;
-		padding-top: 59px;
+		padding-top: 94px;
 	}
 
 	.container-main-hero > div {
