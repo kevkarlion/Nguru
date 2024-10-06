@@ -1139,6 +1139,10 @@ html p a:hover {
 	line-height: 1;
 }
 
+.about-us__img-responsive{
+	padding: 18px 18px;
+}
+
 
 @media (min-width: 1024px) {
 	#sobre-nosotros > span {
