@@ -24,61 +24,52 @@ buttonToggleMenu.addEventListener('click', function() {
 
 
 
-//Animacion h1 Hero
-
-
-// const textHeroOne = document.querySelector('.selector-text-hero');
-// let toggle = true;
-
-
-// const cambiarTexto = ()=> {
-//       if (toggle) {
-//             textHeroOne.style.fontSize = '2.1rem';
-//             textHeroOne.textContent = '"Hagamos algo extraordinario"';
-//       }else {
-//             textHeroOne.textContent = '"Todos tenemos una historia para contar, tu empresa también"';
-//       }     
-//       toggle = !toggle;
-// }
-
-
-//Cambia la clase, 1 vez para cambiar la animacion
-// setTimeout(()=>{
-//       textHeroOne.classList.remove('text-hero-h1__p1');
-//       textHeroOne.classList.add('text-hero-h1-p__infinit');
-      
-// }, 10000);
-
-
-//Intervalos para cambiar el texto
-// setInterval(cambiarTexto, 10000);
-
-
 
 
 
 //Button-SABER MAS
-
 const containerBtnSaberMas = document.querySelector('.container__saber-mas');
 const articleSaberMas = document.querySelector('#id-article-saber-mas');
 const btnSaberMasText = document.querySelector('#button__saber-mas');
 
-const toggleBtnSm = document.querySelector('.btnHidden');
+function ajustarSeccionSegunPantalla() {
+    if (window.innerWidth > 1024) {
+        // Pantallas grandes: mostrar contenido y ocultar botón
+        articleSaberMas.classList.add('article-saber-mas__down');
+        articleSaberMas.classList.remove('article-saber-mas__inactive');
+        containerBtnSaberMas.style.display = 'none';
+    } else {
+        // Pantallas pequeñas: ocultar contenido y mostrar botón
+        articleSaberMas.classList.remove('article-saber-mas__down');
+        articleSaberMas.classList.add('article-saber-mas__inactive');
+        containerBtnSaberMas.style.display = 'flex';
+        btnSaberMasText.innerText = 'Saber más';
+    }
+}
 
-containerBtnSaberMas.addEventListener('click', ()=>{
-      articleSaberMas.classList.toggle('article-saber-mas__down');
-     
-      if ( articleSaberMas.classList.contains('article-saber-mas__inactive')) {
-            articleSaberMas.classList.remove('article-saber-mas__inactive');
-            articleSaberMas.classList.add('article-saber-mas__down');
-            toggleBtnSm.classList.add('toggle-btn-sm');
-      } else {
-            articleSaberMas.classList.remove('article-saber-mas__down');
-            toggleBtnSm.classList.remove('toggle-btn-sm');
-           
-            articleSaberMas.classList.add('article-saber-mas__inactive');
-      }
-})
+// Detectar cambios de tamaño de pantalla
+window.addEventListener('resize', ajustarSeccionSegunPantalla);
+
+// Ejecutar al cargar la página
+ajustarSeccionSegunPantalla();
+
+// Función del botón en mobile
+containerBtnSaberMas.addEventListener('click', () => {
+    if (window.innerWidth <= 1024) {
+        articleSaberMas.classList.toggle('article-saber-mas__down');
+        articleSaberMas.classList.toggle('article-saber-mas__inactive');
+
+        // Cambiar el texto del botón según el estado
+        if (articleSaberMas.classList.contains('article-saber-mas__down')) {
+            btnSaberMasText.innerText = 'Ocultar';
+        } else {
+            btnSaberMasText.innerText = 'Saber más';
+        }
+    }
+});
+
+
+
 
 
 

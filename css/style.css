@@ -893,7 +893,11 @@ html p a:hover {
 
 
 #id-article-saber-mas {
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
 	height: auto;
+	margin-bottom: 1.3rem;
 }
 
 #id-article-saber-mas h3{
