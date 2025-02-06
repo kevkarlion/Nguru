@@ -28,6 +28,7 @@ buttonToggleMenu.addEventListener('click', function() {
 
 
 //Button-SABER MAS
+
 const containerBtnSaberMas = document.querySelector('.container__saber-mas');
 const articleSaberMas = document.querySelector('#id-article-saber-mas');
 const btnSaberMasText = document.querySelector('#button__saber-mas');
@@ -67,9 +68,6 @@ containerBtnSaberMas.addEventListener('click', () => {
         }
     }
 });
-
-
-
 
 
 
