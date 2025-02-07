@@ -393,13 +393,13 @@ html p a:hover {
 	padding-top: 70px;
 	width: 100%;
 	height: 100%;
-	background: 
-	linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(165,227,239,1) 0%, rgba(28,184,214,1) 59%),
-		url('../images/bk-icons-gradient.png');
-  	background-blend-mode: multiply; /* Modo de mezcla para combinar el gradiente con la imagen */
-  	background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
-  	background-position: center; /* Centra la imagen de fondo */
+	background: rgba(28,184,214,1); /* Color sólido */
+	background-image: url('../images/bk-icons-gradient.png'); /* Imagen de fondo */
+  	background-blend-mode: multiply; /* Modo de mezcla */
+  	background-size: cover;
+  	background-position: center;
 }
+
 
 .container-secondary-hero {
 	display: flex;
@@ -529,19 +529,33 @@ html p a:hover {
 }
 
 .text-hero-h1 {
-	font-size: 3rem;
+	font-size: 3.5rem;
 	font-family: "Roboto Slab", serif !important;
   	font-optical-sizing: auto;
   	font-weight: 400;
   	font-style: normal;
-	/* color: rgb(41, 41, 58); */
-	/* color: white; */
 	color: #ebecf0;
 }
 
+
+
+/* .text-hero-h1 {
+	font-size: 3rem;
+	font-family: "Roboto Slab", serif !important;
+	font-optical-sizing: auto;
+	font-weight: 800;
+
+	background: linear-gradient(45deg, #1E90FF, #FF6B6B, #FFD700); 
+	background-size: 300% 300%;
+	-webkit-background-clip: text; 
+	-webkit-text-fill-color: transparent;
+	display: inline-block;
+	animation: gradientMove 4s ease infinite;
+    } */
+
 .text-hero-h1 > span {
 	font-weight: bold;
-	color: #ff6f61;
+	color: #5D6D7E;
 	
 }
 
@@ -554,7 +568,7 @@ html p a:hover {
 }
 
 .text-hero-h2 > span {
-	color: #ff6f61;
+	color: #5D6D7E;
 	font-weight: bold;
 	display: inline;
 }
@@ -563,13 +577,13 @@ html p a:hover {
 	display: flex !important;
 	justify-content: center;
 	font-size: .7rem !important;
-	width: 280px !important;
+	width: 19rem !important;
 	text-align: center !important;
 	max-width: fit-content;
 	background-color: #ff6f61 !important;
 	color: white;
 	padding: 0px 15px;
-	border: none !important;
+	border: 1px, solid, #ff6f61 !important;
 	/* border-radius: 15px !important; */
 }
 
@@ -1131,17 +1145,59 @@ html p a:hover {
 
 /* Aboaut Us */
 
+
+#carouselAboutUs img{
+	width: 100%;
+	height: 441px;
+}
+
+.desktop-img {
+	max-width: 45%; /* Reduce el tamaño */
+	height: auto;
+    }
+
+.d-md-flex {
+	gap: 1rem;
+}
+
+
+.img-carousel {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Evita cortes extraños */
+    }
+    
+    .carousel-inner {
+	display: flex;
+    }
+    
+    .carousel-item {
+	flex: 0 0 100%; /* Hace que cada imagen ocupe exactamente el 100% */
+	transition: transform 0.5s ease-in-out;
+    }
+    
+    .desktop-img {
+	max-width: 45%; /* Hace las imágenes más pequeñas en desktop */
+	height: auto;
+    }
+    
+
+
 #sobre-nosotros {
 	font-weight: bold;
 	font-size: 3.7rem;
-	line-height: 1;
-    	/* margin-bottom: 43px; */
-	
+	line-height: 1;	
 }
+
+#about-us {
+	scroll-margin-top: 40px;
+}
+
 .title-about-us {
 	color: white;
 	font-weight: bold;
 	font-size: 2.7rem;
+	
 }
 
 .about-us__titles{
@@ -1185,6 +1241,8 @@ html p a:hover {
 	.p-about-us {
 		font-size: 1.2rem !important;
 		margin-top: 10px;
+		/* padding-left: 2rem; */
+		padding-right: 3.4rem;
 	}
 }
 
@@ -1379,6 +1437,20 @@ html p a:hover {
 	margin-bottom: 10px;
 }
 
+
+
+.title-testimonials__subtitle__about-us {
+	font-size: .7rem;
+	display: inline-block;
+	width: auto;
+	padding: 3px 5px;
+	text-transform: uppercase;
+	background-color: #1CB8D6;
+	color: white;
+	margin-bottom: 1rem;
+	margin-right: 154px;
+
+}
 
 
 
@@ -3489,6 +3561,15 @@ hr {
 	background-color: #1CB8D6;
 	border-color: #1CB8D6
 }
+@media (min-width: 1600px) {
+	.button.button-primary, .button.button-primary:focus {
+	  color: #fff;
+	  background-color: #1CB8D6;
+	  border-color: #1CB8D6;
+	  margin-top: .5rem;
+	}
+    }
+    
 
 .button.button-primary:hover, .button.button-primary:active {
 	color: #fff;

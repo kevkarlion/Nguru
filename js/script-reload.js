@@ -22,11 +22,6 @@ buttonToggleMenu.addEventListener('click', function() {
 
 
 
-
-
-
-
-
 //Button-SABER MAS
 
 const containerBtnSaberMas = document.querySelector('.container__saber-mas');

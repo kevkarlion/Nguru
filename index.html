@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
     <!-- tag for Bulma -->
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -74,11 +77,11 @@
                 <a href="#about-us">Conocenos</a>
               </div>
             </li>
-            <li>
+            <!-- <li>
               <div class="container-nav__li hvr-underline-from-center">
                 <a href="#our-team">Nuestro equipo</a>
               </div>
-            </li>
+            </li> -->
             <li>
               <div class="container-nav__li hvr-underline-from-center" style="margin-right: .8rem;">
                 <a href="#testimonials">Testimonios</a>
@@ -351,7 +354,8 @@
           <!-- Contenedor central -->
           <div class="row row-50 justify-content-center">
             <div class="col-md-10">
-              <h3 class="wow-outer" id="sobre-nosotros"><span class="wow slideInDown title-about-us">Unas palabras sobre nosotros</span></h3>
+              <h3 class="title-testimonials__subtitle__about-us">Potenciamos tu marca</h3>
+              <h3 class="wow-outer" id="sobre-nosotros"><span class="wow slideInDown title-about-us">Unas palabras sobre <span style="color:#1cb8d6">nosotros</span></span></h3>
       
               <p class="wow-outer"><span class="wow slideInDown p-about-us" data-wow-delay=".05s">En Ngürü, somos apasionados por crear marcas que realmente importan. Nuestro equipo se dedica a construir conexiones auténticas entre las empresas y sus audiencias. Nos esforzamos por entender profundamente a nuestros clientes y sus necesidades, utilizando la creatividad y la innovación para desarrollar soluciones que inspiren y destaquen en el mercado</span></p>
               <p class="wow-outer"><span class="wow slideInDown p-about-us" data-wow-delay=".1s">Nos posicionamos como un socio estratégico que guía a las empresas hacia una conexión profunda con sus clientes, generando mayores niveles de compromiso y atractivo de talento.</span></p>
@@ -360,18 +364,43 @@
               <article class="about-us__article">
                 <div id="id-article-saber-mas" class="article-saber-mas__inactive">
                   <div>
-                    <h3 class="about-us__titles">Socios comprometidos con la excelencia</h3>
-                    <p class="p-about-us">Al trabajar con nosotros, encontrarás un socio comprometido con la excelencia, que valora la autenticidad y la confianza en cada interacción. Nos movemos con agilidad y empatía, asegurándonos de que cada proyecto no solo cumpla con tus expectativas, sino que también aporte un impacto positivo y duradero.</p>
+                    <h3 class="about-us__titles wow slideInDown"">Socios comprometidos con la excelencia</h3>
+                    <p class="p-about-us wow slideInDown" data-wow-delay=".1.5s">Al trabajar con nosotros, encontrarás un socio comprometido con la excelencia, que valora la autenticidad y la confianza en cada interacción. Nos movemos con agilidad y empatía, asegurándonos de que cada proyecto no solo cumpla con tus expectativas, sino que también aporte un impacto positivo y duradero.</p>
                   </div>
                   <div>
-                    <h3 class="about-us__titles">Conexión significativa con tu audiencia</h3>
-                    <p class="p-about-us">Nuestro objetivo es ayudarte a alcanzar una conexión significativa con tu audiencia, impulsando tu marca hacia nuevos horizontes y fortaleciendo tu presencia en el mercado. Juntos, podemos transformar tu visión en realidad, creando marcas que no solo se vean bien, sino que también resuenen y generen un cambio verdadero.</p>
+                    <h3 class="about-us__titles wow slideInDown" ">Conexión significativa con tu audiencia</h3>
+                    <p class="p-about-us wow slideInDown" data-wow-delay=".1.5s">Nuestro objetivo es ayudarte a alcanzar una conexión significativa con tu audiencia, impulsando tu marca hacia nuevos horizontes y fortaleciendo tu presencia en el mercado. Juntos, podemos transformar tu visión en realidad, creando marcas que no solo se vean bien, sino que también resuenen y generen un cambio verdadero.</p>
                   </div>
                 </div>
       
                 <div class="col-12 about-us__img-responsive">
-                  <img src="./images/img-proyects/nguru-work.webp" alt="">
+                  <!-- Carrusel en Mobile -->
+                  <div id="carouselAboutUs" class="carousel slide d-md-none" data-bs-ride="carousel" data-bs-interval="3000">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./images/img-proyects/nguru-work-1.webp" class="d-block w-100 img-carousel" alt="Imagen 1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./images/img-proyects/nguru-work-2.webp" class="d-block w-100 img-carousel" alt="Imagen 2">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselAboutUs" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselAboutUs" data-bs-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                    </button>
+                  </div>
+                
+                  <!-- Imágenes en desktop (lado a lado) -->
+                  <div class="d-none d-md-flex justify-content-center">
+                    <img src="./images/img-proyects/nguru-work-1.webp" class="img-fluid desktop-img" alt="Imagen 1">
+                    <img src="./images/img-proyects/nguru-work-2.webp" class="img-fluid desktop-img" alt="Imagen 2">
+                  </div>
                 </div>
+                
+                
+                
       
                 <!-- Botón Saber Más -->
                 <div class="wow-outer button-outer container__saber-mas">
