@@ -49,21 +49,22 @@ window.addEventListener('resize', ajustarSeccionSegunPantalla);
 // Ejecutar al cargar la página
 ajustarSeccionSegunPantalla();
 
-// Función del botón en mobile
-containerBtnSaberMas.addEventListener('click', () => {
+// Función del botón en mobile con soporte para dispositivos táctiles y clics
+const toggleContent = () => {
     if (window.innerWidth <= 1024) {
         articleSaberMas.classList.toggle('article-saber-mas__down');
         articleSaberMas.classList.toggle('article-saber-mas__inactive');
 
         // Cambiar el texto del botón según el estado
-        if (articleSaberMas.classList.contains('article-saber-mas__down')) {
-            btnSaberMasText.innerText = 'Ocultar';
-        } else {
-            btnSaberMasText.innerText = 'Saber más';
-        }
+        btnSaberMasText.innerText = articleSaberMas.classList.contains('article-saber-mas__down') 
+            ? 'Ocultar' 
+            : 'Saber más';
     }
-});
+};
 
+// Agregar eventos para dispositivos táctiles y clics
+containerBtnSaberMas.addEventListener('touchstart', toggleContent);
+containerBtnSaberMas.addEventListener('click', toggleContent);
 
 
 
