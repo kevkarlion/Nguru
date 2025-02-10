@@ -54,5 +54,5 @@ const toggleContent = (event) => {
             : 'Saber más';
     }
 };
-containerBtnSaberMas.addEventListener('click', toggleContent);
+containerBtnSaberMas.addEventListener('touchstart', toggleContent);
 //----------------
