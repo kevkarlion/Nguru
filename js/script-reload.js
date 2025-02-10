@@ -60,8 +60,7 @@ const toggleContent = (event) => {
     }
 };
 
-// Agregar eventos para dispositivos táctiles y clics
-containerBtnSaberMas.addEventListener('touchstart', toggleContent);
+
 containerBtnSaberMas.addEventListener('click', toggleContent);
 
 
