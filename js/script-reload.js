@@ -46,11 +46,6 @@ ajustarSeccionSegunPantalla();
 // Función para alternar el contenido
 const toggleContent = (event) => {
     if (window.innerWidth <= 1024) {
-        // Evita que `click` se dispare después de `touchstart`
-        if (event.type === 'touchstart') {
-            event.preventDefault();
-        }
-
         articleSaberMas.classList.toggle('article-saber-mas__down');
         articleSaberMas.classList.toggle('article-saber-mas__inactive');
 
@@ -59,11 +54,5 @@ const toggleContent = (event) => {
             : 'Saber más';
     }
 };
-
-
 containerBtnSaberMas.addEventListener('click', toggleContent);
-
-
-
-
 //----------------
