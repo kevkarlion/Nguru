@@ -1094,14 +1094,27 @@ html p a:hover {
 .container__title-card-services{
 	display: flex;
 	width: 100%;
-	min-height: 90px;
-    	max-height: 90px;
+	min-height: 2.81rem;
 	justify-content: center;
 	align-items: center;
 	flex: 1;
 	margin: 0;
-
 }
+
+
+@media (max-width: 576px) {
+	.container__title-card-services {
+		min-height: 4.25rem;
+	}
+	.container__title-card-services h4{
+		font-size: 1.5rem;
+	}
+	.card-services__p p{
+		font-size: 1rem;
+		align-self: start;
+	}
+}
+
 
 .card-services__p {
 	width: 100%;
@@ -1123,7 +1136,9 @@ html p a:hover {
 
 	.card-services article {
 		min-width: 300px;
+		max-height: 280px;
 		max-width: 300px;
+		min-height: 280px;
 	}
 }
 
