@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <head>
-    <title>Home</title>
+    <title>NGURU | Marketing y Estrategias para Empresas</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-
-    <!-- tag for Bulma -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
-    > -->
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+    <title>NGURU | Consultoría en Marketing Estratégico en la Patagonia</title>
+    <meta name="description" content="NGURU es una consultora de marketing en la Patagonia. Creamos estrategias innovadoras para potenciar marcas, aumentar ventas y posicionar negocios en el mercado.">
+    <meta name="keywords" content="marketing en la Patagonia, consultoría de marketing, estrategias de marca, branding, publicidad, posicionamiento de negocios, marketing estratégico, asesoramiento comercial, marketing digital">
+    <meta name="author" content="NGURU">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="NGURU | Expertos en Marketing Estratégico en la Patagonia">
+    <meta property="og:description" content="Creamos estrategias de marketing a medida para negocios en la Patagonia. Posicionamiento de marca, publicidad y asesoramiento comercial.">
+    
+    <meta property="og:url" content="https://nguru.com.ar">
+    <meta property="og:type" content="website">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NGURU | Estrategias de Marketing para Potenciar tu Negocio">
+    <meta name="twitter:description" content="Consultoría en marketing estratégico, branding y publicidad para empresas en la Patagonia.">
+  
+    
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Hover.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+    <link rel="stylesheet" href="css/modal-video.css">
+
 
 
 
@@ -40,11 +58,33 @@
 
     <!-- Stylesheets-->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-v6.css">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <!-- <link rel="manifest" href="favicon/site.webmanifest"> -->
+
+    <!-- CSS de Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+    <!-- WOW -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+
+    <!-- jQuery (requerido) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- JS de Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+    <link rel="preload" as="image" href="/./images/zorrito-hero-scaledpng.webp">
+
+
+   
    
   </head>
   <body>
@@ -137,7 +177,7 @@
             <div class="container-text-hero">
               <div class="text-hero">
                 <h1 class="text-hero-h1 grid-row">Transformamos tu marca con <span>marketing integral</span> y contenido audiovisual profesional.</h1>
-                <h2 class="text-hero-h2 grid-row">Destacamos tu marca y conectamos con la gente mediante un <span>marketing integral y contenido audiovisual profesional</span> ayudándote a crecer y transmitir tus valores de forma auténtica y positiva.</h2>
+                <h2 class="text-hero-h2 grid-row">Destacamos tu marca y conectamos con las personas mediante un <span>marketing integral y contenido audiovisual profesional</span> ayudándote a crecer y transmitir tus valores de forma auténtica y positiva.</h2>
                 
                 <button class="text-hero-button grid-row button button-lg button-primary button-winona wow" href=''><a href="https://wa.me/5492984180495"  target="_blank">Hagamos algo extraordinario</a></button>
               </div>
@@ -145,7 +185,7 @@
             <div class="zorrito-hero-container">
               <figure class="zorrito-hero-figure">
                 <div class="zorrito-hero__circle zorrito-circle"></div>
-                <img class="zorrito-hero zorrito-circle" src='./images/zorrito-hero-scaledpng.png' alt="">
+                <img class="zorrito-hero zorrito-circle" src='./images/zorrito-hero-scaledpng.webp' alt="" fetchpriority="high">
               </figure>
             </div>
           </div>
@@ -157,13 +197,13 @@
       <section id="services" class=" section section-lg text-center bckg-services" data-type="anchor">
         
         <div class="container container-grid__primary ">
-          <h3 class="wow-outer" id="nuestros-servicios"><span class="wow slideInUp">Nuestros servicios</span></h3>
-          <p class="wow-outer"><span class="text-width-1 wow slideInDown">En NGURU, ofrecemos una gama completa de servicios de marketing diseñados para impulsar tu negocio al siguiente nivel.</span></p>
+          <h3 class="wow-outer" id="nuestros-servicios"><span class="wow animate__slideInUp">Nuestros servicios</span></h3>
+          <p class="wow-outer"><span class="text-width-1 wow animate__animate__slideInDown">En NGURU, ofrecemos una gama completa de servicios de marketing diseñados para impulsar tu negocio al siguiente nivel.</span></p>
           <div class="row row-50 row-xxl-70 offset-top-2 container-card-services">
           
             <div class="col-sm-6 col-md-4 col-lg-3 wow-outer card-services">
               <!-- Box Light-->
-              <article class="box-light wow slideInLeft container-card-service" data-wow-delay=".05s">
+              <article class="box-light wow animate__slideInLeft container-card-service" data-wow-delay=".05s">
                 <figure class="container-icon-services">
                   <div></div>
                   <img src="./icons-redes-sociales/iconos-services/branding.png" alt="">
@@ -179,7 +219,7 @@
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 wow-outer card-services">
               <!-- Box Light-->
-              <article class="box-light wow slideInLeft container-card-service" data-wow-delay=".05s">
+              <article class="box-light wow animate__slideInLeft container-card-service" data-wow-delay=".05s">
                 <figure class="container-icon-services">
                   <div></div>
                   <img src="./icons-redes-sociales/iconos-services/digital-marketing.png" alt="">
@@ -195,7 +235,7 @@
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 wow-outer card-services">
               <!-- Box Light-->
-              <article class="box-light wow slideInLeft container-card-service" data-wow-delay=".1s">
+              <article class="box-light wow animate__slideInLeft container-card-service" data-wow-delay=".1s">
                 <figure class="container-icon-services">
                   <div></div>
                   <img src="./icons-redes-sociales/iconos-services/marketing.png" alt="">
@@ -205,14 +245,13 @@
                   <h4 class="box-light-title title-card-services">Publicidad Online</h4>
                 </div>
                 <div class="card-services__p">
-                  <p>Campañas publicitarias en plataformas digitales.
+                  <p>Campañas publicitarias en plataformas digitales.</p>
                 </div>
-                </p>
               </article>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 wow-outer card-services">
               <!-- Box Light-->
-              <article class="box-light wow slideInLeft container-card-service" data-wow-delay=".15s">
+              <article class="box-light wow animate__slideInLeft container-card-service" data-wow-delay=".15s">
                 <figure class="container-icon-services">
                   <div></div>
                   <img src="./icons-redes-sociales/iconos-services/seo.png" alt="">
@@ -222,14 +261,13 @@
                   <h4 class="box-light-title title-card-services">Posicionamiento SEO</h4>
                 </div>
                 <div class="card-services__p">
-                  <p>Mejora de la visibilidad en motores de búsqueda.
-                  </p>
+                  <p>Mejora de la visibilidad en motores de búsqueda.</p>
                 </div>
               </article>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 wow-outer card-services">
               <!-- Box Light-->
-              <article class="box-light wow slideInLeft container-card-service">
+              <article class="box-light wow animate__slideInLeft container-card-service">
                 <figure class="container-icon-services">
                   <div></div>
                   <img src="./icons-redes-sociales/iconos-services/social-media.png" alt="">
@@ -246,7 +284,7 @@
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 wow-outer card-services">
              
-              <article class="box-light wow slideInLeft container-card-service">
+              <article class="box-light wow animate__slideInLeft container-card-service">
                 <figure class="container-icon-services">
                   <div></div>
                   <img src="./icons-redes-sociales/iconos-services/gestion-de-medios.png" alt="">
@@ -263,7 +301,7 @@
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 wow-outer card-services">
               <!-- Box Light-->
-              <article class="box-light wow slideInLeft container-card-service" data-wow-delay=".1s">
+              <article class="box-light wow animate__slideInLeft container-card-service" data-wow-delay=".1s">
                 <figure class="container-icon-services">
                   <div></div>
                   <img src="./icons-redes-sociales/iconos-services/customer-engagement.png" alt="">
@@ -279,7 +317,7 @@
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 wow-outer card-services">
               <!-- Box Light-->
-              <article class="box-light wow slideInLeft container-card-service" data-wow-delay=".15s">
+              <article class="box-light wow animate__slideInLeft container-card-service" data-wow-delay=".15s">
                 <figure class="container-icon-services">
                   <div></div>
                   <img src="./icons-redes-sociales/iconos-services/data-transformation.png" alt="">
@@ -297,7 +335,7 @@
             <div class="col-sm-6 col-md-4 col-lg-3 wow-outer card-services">
               <!-- Box Light-->
              
-              <article class="box-light wow slideInLeft container-card-service" data-wow-delay=".15s">
+              <article class="box-light wow animate__slideInLeft container-card-service" data-wow-delay=".15s">
                 <figure class="container-icon-services">
                   <div></div>
                   <img src="./icons-redes-sociales/iconos-services/video.png" alt="">
@@ -314,7 +352,7 @@
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 wow-outer card-services">
               <!-- Box Light-->
-              <article class="box-light wow slideInLeft container-card-service" data-wow-delay=".15s">
+              <article class="box-light wow animate__slideInLeft container-card-service" data-wow-delay=".15s">
                 <figure class="container-icon-services">
                   <div></div>
                   <img src="./icons-redes-sociales/iconos-services/social-media-management.png" alt="">
@@ -330,7 +368,7 @@
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3 wow-outer card-services">
               <!-- Box Light-->
-              <article class="box-light wow slideInLeft" data-wow-delay=".15s">
+              <article class="box-light wow animate__slideInLeft" data-wow-delay=".15s">
                 <figure class="container-icon-services">
                   <div></div>
                   <img src="./icons-redes-sociales/iconos-services/web-design.png" alt="">
@@ -357,21 +395,21 @@
           <div class="row row-50 justify-content-center">
             <div class="col-md-10">
               <h3 class="title-testimonials__subtitle__about-us">Potenciamos tu marca</h3>
-              <h3 class="wow-outer" id="sobre-nosotros"><span class="wow slideInDown title-about-us">Unas palabras sobre <span style="color:#1cb8d6">nosotros</span></span></h3>
+              <h3 class="wow-outer" id="sobre-nosotros"><span class="wow animate__slideInDown title-about-us">Unas palabras sobre <span style="color:#1cb8d6">nosotros</span></span></h3>
       
-              <p class="wow-outer"><span class="wow slideInDown p-about-us" data-wow-delay=".05s">En Ngürü, somos apasionados por crear marcas que realmente importan. Nuestro equipo se dedica a construir conexiones auténticas entre las empresas y sus audiencias. Nos esforzamos por entender profundamente a nuestros clientes y sus necesidades, utilizando la creatividad y la innovación para desarrollar soluciones que inspiren y destaquen en el mercado</span></p>
-              <p class="wow-outer"><span class="wow slideInDown p-about-us" data-wow-delay=".1s">Nos posicionamos como un socio estratégico que guía a las empresas hacia una conexión profunda con sus clientes, generando mayores niveles de compromiso y atractivo de talento.</span></p>
+              <p class="wow-outer about-us__p-j"><span class="wow animate__slideInDown p-about-us" data-wow-delay=".05s">En Ngürü, somos apasionados por crear marcas que realmente importan. Nuestro equipo se dedica a construir conexiones auténticas entre las empresas y sus audiencias. Nos esforzamos por entender profundamente a nuestros clientes y sus necesidades, utilizando la creatividad y la innovación para desarrollar soluciones que inspiren y destaquen en el mercado.</span></p>
+              <p class="wow-outer about-us__p-j"><span class="wow animate__slideInDown p-about-us" data-wow-delay=".1s">Nos posicionamos como un socio estratégico que guía a las empresas hacia una conexión profunda con sus clientes, generando mayores niveles de compromiso y atractivo de talento.</span></p>
       
               <!-- Slider -->
               <article class="about-us__article">
                 <div id="id-article-saber-mas" class="article-saber-mas__down">
                   <div>
-                    <h3 class="about-us__titles wow slideInDown"">Socios comprometidos con la excelencia</h3>
-                    <p class="p-about-us wow slideInDown" data-wow-delay=".1.5s">Al trabajar con nosotros, encontrarás un socio comprometido con la excelencia, que valora la autenticidad y la confianza en cada interacción. Nos movemos con agilidad y empatía, asegurándonos de que cada proyecto no solo cumpla con tus expectativas, sino que también aporte un impacto positivo y duradero.</p>
+                    <h3 class="about-us__titles wow animate__slideInDown">Socios comprometidos con la excelencia</h3>
+                    <p class="p-about-us wow animate__slideInDown about-us__p-j" data-wow-delay=".1.5s">Al trabajar con nosotros, encontrarás un socio comprometido con la excelencia, que valora la autenticidad y la confianza en cada interacción. Nos movemos con agilidad y empatía, asegurándonos de que cada proyecto no solo cumpla con tus expectativas, sino que también aporte un impacto positivo y duradero.</p>
                   </div>
                   <div>
-                    <h3 class="about-us__titles wow slideInDown">Conexión significativa con tu audiencia</h3>
-                    <p class="p-about-us wow slideInDown" data-wow-delay=".1.5s">Nuestro objetivo es ayudarte a alcanzar una conexión significativa con tu audiencia, impulsando tu marca hacia nuevos horizontes y fortaleciendo tu presencia en el mercado. Juntos, podemos transformar tu visión en realidad, creando marcas que no solo se vean bien, sino que también resuenen y generen un cambio verdadero.</p>
+                    <h3 class="about-us__titles wow animate__slideInDown">Conexión significativa con tu audiencia</h3>
+                    <p class="p-about-us wow animate__slideInDown about-us__p-j" data-wow-delay=".1.5s">Nuestro objetivo es ayudarte a alcanzar una conexión significativa con tu audiencia, impulsando tu marca hacia nuevos horizontes y fortaleciendo tu presencia en el mercado. Juntos, podemos transformar tu visión en realidad, creando marcas que no solo se vean bien, sino que también resuenen y generen un cambio verdadero.</p>
                   </div>
                 </div>
       
@@ -400,402 +438,155 @@
                     <img src="./images/img-proyects/nguru-work-2.webp" class="img-fluid desktop-img" alt="Imagen 2">
                   </div>
                 </div>
-                
-                
-                
-      
-                <!-- Botón Saber Más -->
-                <!-- <div class="wow-outer button-outer container__saber-mas">
-                  <a class="button button-lg button-primary button-winona wow slideInDown" style='z-index: 2;' id="button__saber-mas">
-                    Saber más
-                  </a>
-                  <a class="button button-lg button-primary button-winona wow slideInDown btnStyleTwins btnHidden" style="position: relative; z-index: 1; margin: 0;" id="button__saber-mas">
-                    Ocultar
-                  </a>
-                </div> -->
               </article>
             </div>
           </div>
         </div>
       </section>
+
+
+<!-- Proyectos Realizados -->
+<section class="section section-lg bg-white" id="projects" data-type="anchor">
+  <div class="container">
+
+    <!-- Títulos de sección -->
+    <div class="container-titles-projects">
+      <span class="title-projects__subtitle">Nuestro trabajo</span>
+      <h2 class="title-projects">Proyectos Realizados</h2>
+      <p class="subtitle_proyects">
+        Descubre algunos de los proyectos en los que hemos trabajado, combinando creatividad, estrategia y resultados tangibles para nuestros clientes.
+      </p>
+    </div>
+
+    <!-- Proyecto 1 -->
+    <div class="project-showcase">
       
-      
+      <!-- Header del proyecto -->
+      <div class="project-header">
+        <h3 class="project-title__proyects">Tuki</h3>
+        <div class="project-tags">
+          <span class="project-tag">Branding</span>
+          <span class="project-tag">Video Marketing</span>
+          <span class="project-tag">Redes Sociales</span>
+        </div>
+      </div>
+
+      <!-- Video del proyecto -->
+      <div class="project-video">
+        <video controls playsinline class="project-video-player">
+          <source src="./videos/tuki-video.mp4" type="video/mp4">
+          <source src="./videos/tuki-video.webm" type="video/webm">
+          Tu navegador no soporta el elemento de video.
+        </video>
+      </div>
+
+      <!-- Descripción del proyecto -->
+      <div class="project-description">
+        <p>
+          Emitido por Canal 10 de Río Negro, Tuki es cocina simple y con corazón patagónico: recetas caseras, historias cercanas y sabores que invitan a sentirse en familia, alrededor de una mesa compartida.
+        </p>
+
+        <!-- Resultados / Impacto -->
+        <div class="project-results">
+          <h4>Impacto del proyecto:</h4>
+          <ul>
+            <li>Mayor interacción y cercanía con la comunidad en redes sociales.</li>
+            <li>Impulso en la presencia digital y crecimiento sostenido de la marca.</li>
+            <li>Fortalecimiento del vínculo con clientes y nuevos públicos.</li>
+            <li>Reconocimiento como una propuesta innovadora dentro del sector.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Galería del proyecto -->
+      <div class="project-gallery">
+        <h4>Galería del proyecto</h4>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="./images/tuki/img1.webp" alt="Tuki - Trabajo 1" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="./images/tuki/img2.webp" alt="Tuki - Trabajo 2" loading="lazy">
+          </div>
+          <!-- <div class="gallery-item">
+            <img src="./images/tuki/img3.webp" alt="Tuki - Trabajo 3" loading="lazy">
+          </div> -->
+          <div class="gallery-item">
+            <img src="./images/tuki/img4.webp" alt="Tuki - Trabajo 4" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
     
-      <!-- Nuestro equipo-->
-      <!-- <section class="section section-lg section-last text-center" id="our-team" data-type="anchor">
-        <div class="container">
-          <div class="container-titles-our-team">
 
-            <h3 class="title-our-team__subtitle">Estrategas creativos</h3>
-            <h2 class="wow-outer text-center"><span class="wow slideInDown title-our-team" id="our-team">Nuestro equipo</span></h2>
-          </div>
-          <div class="row row-50 container-our-team">
- -->
+    <!-- Botón WhatsApp -->
+    <div class="text-center" style="margin-top: 4rem;">
+      <a href="https://wa.me/5492984180495" target="_blank" class="btn-project-link">
+        ¿Quieres ver tu proyecto aquí?
+      </a>
+    </div>
 
-            <!-- card bootstrap -->
-            <!-- <div class="item-card-team wow-outer ">
-              <div class=" card wow slideInLeft">
-                <img src="./images/Perfil-Profesional-_63-819x1024.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Juan Carlos Romero</h5>
-                  <p class="card-position">Jefaso </p>
-                  <p class="card-text">Especializado en las artes misticas del marketing. Entrenado por los maestros ancestrales del marketing.</p>
-                  <a href="#" class="btn btn-primary">Redes</a>
-                </div>
-              </div>
-            </div>
+  </div>
+</section>
 
-            
 
-            <div class="item-card-team wow-outer">
-              <div class=" card wow slideInLeft">
-                <img src="./images/Perfil-Profesional-_63-819x1024.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Juan Carlos Romero</h5>
-                  <p class="card-position">Jefaso </p>
-                  <p class="card-text">Especializado en las artes misticas del marketing. Entrenado por los maestros ancestrales del marketing.</p>
-                  <a href="#" class="btn btn-primary">Redes</a>
-                </div>
-              </div>
-            </div>
-            <div class="item-card-team wow-outer "">
-              <div class=" card wow slideInLeft">
-                <img src="./images/Perfil-Profesional-_63-819x1024.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Juan Carlos Romero</h5>
-                  <p class="card-position">Jefaso </p>
-                  <p class="card-text">Especializado en las artes misticas del marketing. Entrenado por los maestros ancestrales del marketing.</p>
-                  <a href="#" class="btn btn-primary">Redes</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="wow-outer button-outer"><a class="button button-lg button-primary button-winona wow slideInUp" href="#">Conoce a nuestro equipo</a></div>
-        </div>
-      </section> -->
-      <!-- Testimonials-->
-      <section class="section section-lg bg-gray-100" id="testimonials" data-type="anchor">
-        <div class="container">
-          <div class="container-titles-testimonios">
-            <h3 class="title-testimonials__subtitle">Historias de éxito</h3>
-            <h2 class="text-center title-testimonials" id="testimonios">Testimonios</h2>
-          </div>
 
-          <!-- Contenedor central -->
-          <div class="row row-50 justify-content-center justify-content-lg-between">
-            <div class="col-md-10 col-lg-5">
-              <div class="owl-carousel" data-items="1" data-dots="true" data-nav="false" data-loop="true" data-margin="30" data-stage-padding="0" data-mouse-drag="false">
-                <div class="wow-outer">
-                  <blockquote class="quote-modern wow slideInLeft">
-                    <svg class="quote-modern-mark" x="0px" y="0px" width="35px" height="25px" viewbox="0 0 35 25">
-                      <path d="M27.461,10.206h7.5v15h-15v-15L25,0.127h7.5L27.461,10.206z M7.539,10.206h7.5v15h-15v-15L4.961,0.127h7.5                L7.539,10.206z"></path>
-                    </svg>
-                    <div class="quote-modern-text">
-                      <p>La agencia superó con creces mis expectativas. Su equipo creativo captó perfectamente mi visión y logró plasmarla de manera excepcional. Desde el primer contacto, demostraron un alto nivel de profesionalismo y compromiso con el proyecto. El resultado final no solo cumplió con lo que había solicitado, sino que lo llevó a un nivel superior, superando todas mis expectativas. Recomiendo encarecidamente sus servicios a cualquier persona que busque calidad y creatividad</p>
-                    </div>
-                    <div class="quote-modern-meta">
-                      <!-- <div class="quote-modern-avatar"><img src="images/testimonials-person-3-96x96.jpg" alt="" width="96" height="96"/>
-                      </div> -->
-                      <div class="quote-modern-info">
-                        <cite class="quote-modern-cite">Walter Daniel Carrión</cite>
-                        <p class="quote-modern-caption">Conductor, Poductor de TV, Asesor de imagen</p>
-                      </div>
-                    </div>
-                  </blockquote>
-                </div>
-                <!-- <div class="wow-outer">
-                  <blockquote class="quote-modern wow slideInLeft">
-                    <svg class="quote-modern-mark" x="0px" y="0px" width="35px" height="25px" viewbox="0 0 35 25">
-                      <path d="M27.461,10.206h7.5v15h-15v-15L25,0.127h7.5L27.461,10.206z M7.539,10.206h7.5v15h-15v-15L4.961,0.127h7.5                L7.539,10.206z"></path>
-                    </svg>
-                    <div class="quote-modern-text">
-                      <p>¡NGURU es, sin duda, una de las mejores empresas con las que hemos trabajado! La empresa ha cumplido o superado todos los objetivos que inicialmente establecimos para todos los proyectos que implementaron para nosotros. Estoy seguro de que nuestra empresa volverá a asociarse con ellos en el futuro.</p>
-                    </div>
-                    <div class="quote-modern-meta">
-                      
-                      <div class="quote-modern-info">
-                        <cite class="quote-modern-cite">Kelly McMillan</cite>
-                        <p class="quote-modern-caption">Private Entrepreneur</p>
-                      </div>
-                    </div>
-                  </blockquote>
-                </div> -->
-                <!-- <div class="wow-outer">
-                  <blockquote class="quote-modern wow slideInLeft">
-                    <svg class="quote-modern-mark" x="0px" y="0px" width="35px" height="25px" viewbox="0 0 35 25">
-                      <path d="M27.461,10.206h7.5v15h-15v-15L25,0.127h7.5L27.461,10.206z M7.539,10.206h7.5v15h-15v-15L4.961,0.127h7.5                L7.539,10.206z"></path>
-                    </svg>
-                    <div class="quote-modern-text">
-                      <p>El equipo de NGURU nos brinda un servicio completo de marketing digital que abarca redes sociales, generación de demanda, publicidad digital, optimización de motores de búsqueda, email y automatización de marketing, lo que ha aumentado nuestra visibilidad y generación de leads entrantes.</p>
-                    </div>
-                    <div class="quote-modern-meta">
-                     
-                      <div class="quote-modern-info">
-                        <cite class="quote-modern-cite">Harold Barnett</cite>
-                        <p class="quote-modern-caption">Regional Manager</p>
-                      </div>
-                    </div>
-                  </blockquote>
-                </div> -->
-              </div>
-            </div>
-            <div class="col-md-10 col-lg-6 wow-outer">
-              <div class="thumbnail-video-1 bg-gray-700 wow slideInLeft">
-                <div class="embed-responsive embed-responsive-16by9">
-                  <video src="./videos/elite-moda-horizontal.mp4" controls></video>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
+
+      <!-- Modal para detalles del proyecto -->
+     
+
+
+
+
+      
+           <!-- Testimonials-->
+<section class="section section-lg bg-gray-100" id="testimonials" data-type="anchor">
+  <div class="container">
+    <div class="container-titles-testimonios">
+      <h3 class="title-testimonials__subtitle">Historias de éxito</h3>
+      <h2 class="text-center title-testimonials" id="testimonios">Testimonios</h2>
+    </div>
+
+    <!-- Contenedor central -->
+    <div class="row row-50 justify-content-center justify-content-lg-between">
+      <!-- Testimonio (SIN OWL CAROUSEL) -->
+      <div class="col-md-10 col-lg-5">
+        <blockquote class="quote-modern wow animate__fadeInLeft" data-wow-delay="0.3s">
+          <svg class="quote-modern-mark" width="35px" height="25px" viewbox="0 0 35 25">
+            <path d="M27.461,10.206h7.5v15h-15v-15L25,0.127h7.5L27.461,10.206z M7.539,10.206h7.5v15h-15v-15L4.961,0.127h7.5 L7.539,10.206z"></path>
+          </svg>
+          <div class="quote-modern-text">
+            <p>La agencia superó con creces mis expectativas. Su equipo creativo captó perfectamente mi visión y logró plasmarla de manera excepcional. Desde el primer contacto, demostraron un alto nivel de profesionalismo y compromiso con el proyecto. El resultado final no solo cumplió con lo que había solicitado, sino que lo llevó a un nivel superior, superando todas mis expectativas. Recomiendo encarecidamente sus servicios a cualquier persona que busque calidad y creatividad.</p>
+          </div>
+          <div class="quote-modern-meta">
+            <div class="quote-modern-info">
+              <cite class="quote-modern-cite">Walter Daniel Carrión</cite>
+              <p class="quote-modern-caption">Conductor, Productor de TV, Asesor de imagen</p>
+            </div>
+          </div>
+        </blockquote>
+      </div>
+
+      <!-- Video -->
+      <div class="col-md-10 col-lg-6">
+        <div class="thumbnail-video-1 bg-gray-700 wow animate__fadeInRight" data-wow-delay="0.5s">
+          <div class="embed-responsive embed-responsive-16by9">
+            <video src="./videos/elite-moda-horizontal.mp4" controls></video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
       <!-- Pricing-->
-      <!-- <section class="section section-lg text-center" id="pricing" data-type="anchor">
-        <div class="container">
-          <h3>Pricing</h3>
-          <p><span class="text-width-1">In this section, you can learn more about available pricing plans and included services. Even if you own a small business and don’t need big marketing campaign, we have what to offer.</span></p>
-          <div class="pricing-group-modern wow-outer">
-            <!-- Pricing Modern-->
-            <!-- <article class="pricing-modern wow fadeInLeft">
-              <ul class="pricing-modern-rating">
-                <li class="mdi mdi-star-outline"></li>
-              </ul>
-              <h5 class="pricing-modern-title"><a href="#">Small Business</a></h5>
-              <table class="pricing-modern-table">
-                <tr>
-                  <td>2</td>
-                  <td>Campaign Hours</td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>Month</td>
-                </tr>
-                <tr>
-                  <td>10</td>
-                  <td>Additional Services</td>
-                </tr>
-              </table>
-              <p class="pricing-modern-price"><span class="pricing-modern-price-currency">$</span>789.00</p><a class="button button-primary button-winona" href="#">Order now</a>
-            </article>
-            <!-- Pricing Modern-->
-            <!-- <article class="pricing-modern wow fadeInLeft" data-wow-delay=".05s">
-              <ul class="pricing-modern-rating">
-                <li class="mdi mdi-star-outline"></li>
-                <li class="mdi mdi-star-outline"></li>
-              </ul>
-              <h5 class="pricing-modern-title"><a href="#">Medium Business</a></h5>
-              <table class="pricing-modern-table">
-                <tr>
-                  <td>5</td>
-                  <td>Campaign Hours</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Months</td>
-                </tr>
-                <tr>
-                  <td>20</td>
-                  <td>Additional Services</td>
-                </tr>
-              </table>
-              <p class="pricing-modern-price"><span class="pricing-modern-price-currency">$</span>1299.00</p><a class="button button-primary button-winona" href="#">Order now</a>
-            </article> --> 
-            <!-- Pricing Modern-->
-            <!-- <article class="pricing-modern wow fadeInLeft" data-wow-delay=".1s">
-              <ul class="pricing-modern-rating">
-                <li class="mdi mdi-star-outline"></li>
-                <li class="mdi mdi-star-outline"></li>
-                <li class="mdi mdi-star-outline"></li>
-              </ul>
-              <h5 class="pricing-modern-title"><a href="#">Big Business</a></h5>
-              <table class="pricing-modern-table">
-                <tr>
-                  <td>10</td>
-                  <td>Campaign Hours</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Months</td>
-                </tr>
-                <tr>
-                  <td>40</td>
-                  <td>Additional Services</td>
-                </tr>
-              </table>
-              <p class="pricing-modern-price"><span class="pricing-modern-price-currency">$</span>2369.00</p><a class="button button-primary button-winona" href="#">Order now</a>
-            </article> -->
-            <!-- Pricing Modern-->
-            <!-- <article class="pricing-modern wow fadeInLeft" data-wow-delay=".15s">
-              <ul class="pricing-modern-rating">
-                <li class="mdi mdi-star-outline"></li>
-                <li class="mdi mdi-star-outline"></li>
-                <li class="mdi mdi-star-outline"></li>
-                <li class="mdi mdi-star-outline"></li>
-              </ul>
-              <h5 class="pricing-modern-title"><a href="#">Corporation</a></h5>
-              <table class="pricing-modern-table">
-                <tr>
-                  <td>20+</td>
-                  <td>Campaign Hours</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Months</td>
-                </tr>
-                <tr>
-                  <td>60+</td>
-                  <td>Additional Services</td>
-                </tr>
-              </table>
-              <p class="pricing-modern-price"><span class="pricing-modern-price-currency">$</span>6790.00</p><a class="button button-primary button-winona" href="#">Order now</a>
-            </article>
-          </div> -->
-        <!-- </div>
-      </section> --> 
-      <!-- Wide CTA-->
-      <!-- <section class="section section-md bg-primary-gradient text-center">
-        <div class="container">
-          <div class="box-cta-1">
-            <h3 class="wow-outer"><span class="wow slideInRight">We Offer Quality <span class="font-weight-bold">Branding and Promotion</span></span></h3>
-            <div class="wow-outer button-outer"><a class="button button-lg button-primary button-winona wow slideInLeft" href="#">Free consultation</a></div>
-          </div>
-        </div>
-      </section> -->
-      <!-- Latest Blog Posts-->
-      <!-- <section class="section section-lg text-center" id="blog" data-type="anchor">
-        <div class="container">
-          <h3 class="wow-outer"><span class="wow slideInDown">ÚLTIMOS POSTEOS</span></h3>
-          <div class="row row-50">
-            <div class="col-md-6 wow-outer"> -->
-              <!-- Post Modern-->
-              <!-- <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="images/grid-blog-1-571x353.jpg" alt="" width="571" height="353"/></a>
-                <h4 class="post-modern-title"><a href="#">10 Digital Marketing Mistakes to Avoid</a></h4>
-                <ul class="post-modern-meta">
-                  <li>by Theresa Barnes</li>
-                  <li>
-                    <time datetime="2019">Apr 21, 2019 at 12:05 pm</time>
-                  </li>
-                  <li><a class="button-winona" href="#">News</a></li>
-                </ul>
-                <p>Though managing your digital marketing campaign may seem easy, you can encounter some complexities, which usually lead to mistakes and a bad promotion effect.</p>
-              </article>
-            </div>
-            <div class="col-md-6 wow-outer"> -->
-              <!-- Post Modern-->
-              <!-- <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="images/grid-blog-2-571x353.jpg" alt="" width="571" height="353"/></a>
-                <h4 class="post-modern-title"><a href="#">Where Marketers Need to Succeed This Season</a></h4>
-                <ul class="post-modern-meta">
-                  <li>by Theresa Barnes </li>
-                  <li>
-                    <time datetime="2019">Apr 21, 2019 at 12:05 pm</time>
-                  </li>
-                  <li><a class="button-winona" href="#">News</a></li>
-                </ul>
-                <p>Being a successful marketer today might appear to require a never-ending list of skills. Where do you need to excel -- content creation, social media, web analytics, or all of the above?</p>
-              </article>
-            </div>
-          </div> -->
-          <!-- <div class="wow-outer button-outer"><a class="button button-primary-outline button-winona wow slideInUp" href="#">View all Blog posts</a></div>
-        </div>
-      </section> -->
-      <!-- Contact Us-->
-      <!-- <section class="section bg-gray-100" id="contact-us" data-type="anchor">
-        <div class="range justify-content-xl-between">
-          <div class="cell-xl-6 align-self-center container">
-            <div class="row">
-              <div class="col-lg-9 cell-inner">
-                <div class="section-lg">
-                  <h3 class="wow-outer"><span class="wow slideInDown">Contact Us</span></h3> -->
-                  <!-- RD Mailform-->
-                  <!-- <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
-                    <div class="row row-10">
-                      <div class="col-md-6 wow-outer">
-                        <div class="form-wrap wow fadeSlideInUp">
-                          <label class="form-label-outside" for="contact-first-name">First Name</label>
-                          <input class="form-input" id="contact-first-name" type="text" name="name" data-constraints="@Required">
-                        </div>
-                      </div>
-                      <div class="col-md-6 wow-outer">
-                        <div class="form-wrap wow fadeSlideInUp">
-                          <label class="form-label-outside" for="contact-last-name">Last Name</label>
-                          <input class="form-input" id="contact-last-name" type="text" name="name" data-constraints="@Required">
-                        </div>
-                      </div>
-                      <div class="col-md-6 wow-outer">
-                        <div class="form-wrap wow fadeSlideInUp">
-                          <label class="form-label-outside" for="contact-email">E-mail</label>
-                          <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required">
-                        </div>
-                      </div>
-                      <div class="col-md-6 wow-outer">
-                        <div class="form-wrap wow fadeSlideInUp">
-                          <label class="form-label-outside" for="contact-phone">Phone</label>
-                          <input class="form-input" id="contact-phone" type="text" name="phone" data-constraints="@PhoneNumber @Required">
-                        </div>
-                      </div>
-                      <div class="col-12 wow-outer">
-                        <div class="form-wrap wow fadeSlideInUp">
-                          <label class="form-label-outside" for="contact-message">Your Message</label>
-                          <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="group group-middle">
-                      <div class="wow-outer">
-                        <button class="button button-primary button-winona wow slideInRight" type="submit">Send Message</button>
-                      </div>
-                      <p>or use</p>
-                      <div class="wow-outer"><a class="button button-primary-outline button-icon button-icon-left button-winona wow slideInLeft" href="#"><span class="icon text-accent mdi mdi-facebook-messenger"></span>Messenger</a></div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div> -->
-          <!-- <div class="cell-xl-5 height-fill wow fadeIn"> -->
-            <!--Please, add the data attribute data-key="YOUR_API_KEY" in order to insert your own API key for the Google map.-->
-            <!--Please note that YOUR_API_KEY should replaced with your key.-->
-            <!--Example: <div class="google-map-container" data-key="YOUR_API_KEY">-->
-            <!-- <div class="google-map-container" data-center="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-zoom="5" data-icon="images/gmap_marker.png" data-icon-active="images/gmap_marker_active.png" data-styles="[{&quot;featureType&quot;:&quot;landscape&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:60}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:40},{&quot;visibility&quot;:&quot;on&quot;}]},{&quot;featureType&quot;:&quot;transit&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;visibility&quot;:&quot;simplified&quot;}]},{&quot;featureType&quot;:&quot;administrative.province&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;water&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;on&quot;},{&quot;lightness&quot;:30}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ef8c25&quot;},{&quot;lightness&quot;:40}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.stroke&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;poi.park&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#b6c54c&quot;},{&quot;lightness&quot;:40},{&quot;saturation&quot;:-40}]},{}]">
-              <div class="google-map"></div>
-              <ul class="google-map-markers">
-                <li data-location="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-description="9870 St Vincent Place, Glasgow"></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <!-- Fullwidth Gallery -->
-      <!-- <section class="section text-center"> -->
-        <!-- Owl Carousel-->
-        <!-- <div class="owl-carousel owl-carousel-dots-space" data-items="2" data-sm-items="3" data-md-items="4" data-lg-items="5" data-xl-items="6" data-dots="true" data-nav="false" data-stage-padding="0" data-loop="true" data-margin="0" data-lightgallery="group" data-mouse-drag="false"> -->
-          <!-- Thumbnail Thin-->
-          <!-- <div class="wow-outer"><a class="thumbnail-thin wow slideInLeft" href="images/gallery-original-1.jpg" data-lightgallery="item"> -->
-              <!-- <div class="thumbnail-thin-inner"><img class="thumbnail-thin-image" src="images/galleries-1-640x640.jpg" alt="" width="640" height="640"/> -->
-              <!-- </div></a></div> -->
-          <!-- Thumbnail Thin-->
-          <!-- <div class="wow-outer"><a class="thumbnail-thin wow slideInLeft" href="images/gallery-original-2.jpg" data-lightgallery="item">
-              <div class="thumbnail-thin-inner"><img class="thumbnail-thin-image" src="images/galleries-2-640x640.jpg" alt="" width="640" height="640"/>
-              </div></a></div> -->
-          <!-- Thumbnail Thin-->
-          <!-- <div class="wow-outer"><a class="thumbnail-thin wow slideInLeft" href="images/gallery-original-3.jpg" data-lightgallery="item">
-              <div class="thumbnail-thin-inner"><img class="thumbnail-thin-image" src="images/galleries-3-640x640.jpg" alt="" width="640" height="640"/>
-              </div></a></div> -->
-          <!-- Thumbnail Thin-->
-          <!-- <div class="wow-outer"><a class="thumbnail-thin wow slideInLeft" href="images/gallery-original-4.jpg" data-lightgallery="item">
-              <div class="thumbnail-thin-inner"><img class="thumbnail-thin-image" src="images/galleries-4-640x640.jpg" alt="" width="640" height="640"/>
-              </div></a></div> -->
-          <!-- Thumbnail Thin-->
-          <!-- <div class="wow-outer"><a class="thumbnail-thin wow slideInLeft" href="images/gallery-original-5.jpg" data-lightgallery="item">
-              <div class="thumbnail-thin-inner"><img class="thumbnail-thin-image" src="images/galleries-5-640x640.jpg" alt="" width="640" height="640"/>
-              </div></a></div> -->
-          <!-- Thumbnail Thin-->
-          <!-- <div class="wow-outer"><a class="thumbnail-thin wow slideInLeft" href="images/gallery-original-6.jpg" data-lightgallery="item">
-              <div class="thumbnail-thin-inner"><img class="thumbnail-thin-image" src="images/galleries-6-640x640.jpg" alt="" width="640" height="640"/>
-              </div></a></div> -->
-        <!-- </div>
-      </section> -->
-      <!-- <section><a class="d-block" href="https://www.templatemonster.com/landing-page-template/profilab-marketing-agency-clean-html-bootstrap-landing-page-template-79220.html" target="_blank"><img class="img-responsive" src="images/banner-bottom-2050x310.jpg" alt="" width="2050" height="310"/></a></section> -->
+
       <!-- Page Footer-->
       <footer class="section footer-linked bg-gray-700" id="footer">
         <div class="footer-linked-main container-main__footer">
@@ -803,49 +594,44 @@
             <div class="container-footer__secondary">
               
               <div class="container-redes-contact">
-                <div class="container-redes-contact__title">
-                  <h4 >Seguinos en las redes</h4>
+                <div class="container-redes-info-contact">
+                  
+                    <div class="container-redes-contact__title">
+                      <h4 >Seguinos en las redes</h4>
+                    </div>
+                  
+                    <ul class="container-redes__ul container-footer__ul">
+    
+                      <li class="container-redes__li">
+                        <svg style="fill: white;" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg> 
+                      <a href="https://www.instagram.com/nguru_marketing_publicidad/" hreflang="nguru_marketing_publicidad"  target="_blank">Instagram
+                      </a>
+                    </li>
+                    <li class="container-redes__li">
+                      <svg fill="white" height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                        viewBox="-143 145 512 512" xml:space="preserve">
+                        <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M169.5,357.6l-2.9,38.3h-39.3
+                        v133H77.7v-133H51.2v-38.3h26.5v-25.7c0-11.3,0.3-28.8,8.5-39.7c8.7-11.5,20.6-19.3,41.1-19.3c33.4,0,47.4,4.8,47.4,4.8l-6.6,39.2
+                        c0,0-11-3.2-21.3-3.2c-10.3,0-19.5,3.7-19.5,14v29.9H169.5z"/>
+                      </svg> 
+                      <a href="https://www.facebook.com/nguru.marketing.publicidad?mibextid=kFxxJD" hreflang="nguru_marketing_publicidad"  target="_blank"> Facebook
+                      </a>
+                    </li>
+                    <li class="container-redes__li">
+                      <svg style="fill: white;" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"  target="_blank"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                      </svg> 
+                      <a href="https://www.linkedin.com/company/nguru/" target="_blank">Linkedin
+                      </a>
+                    </li>  
+                    <li class="container-redes__li">
+                      <svg style="fill: white;" white;" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" ><title>WhatsApp</title><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                      <a href="https://wa.me/5492984180495" target="_blank">Whatsapp
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-              
-                <ul class="container-redes__ul container-footer__ul">
-
-                  <li class="container-redes__li">
-                    <svg style="fill: white;" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg> 
-                  <a href="https://www.instagram.com/nguru_marketing_publicidad/" hreflang="nguru_marketing_publicidad"  target="_blank">Instagram
-                  </a>
-                </li>
-                <li class="container-redes__li">
-                  <svg fill="white" height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-                    viewBox="-143 145 512 512" xml:space="preserve">
-                    <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M169.5,357.6l-2.9,38.3h-39.3
-                    v133H77.7v-133H51.2v-38.3h26.5v-25.7c0-11.3,0.3-28.8,8.5-39.7c8.7-11.5,20.6-19.3,41.1-19.3c33.4,0,47.4,4.8,47.4,4.8l-6.6,39.2
-                    c0,0-11-3.2-21.3-3.2c-10.3,0-19.5,3.7-19.5,14v29.9H169.5z"/>
-                  </svg> 
-                  <a href="https://www.facebook.com/nguru.marketing.publicidad?mibextid=kFxxJD" hreflang="nguru_marketing_publicidad"  target="_blank"> Facebook
-                  </a>
-                </li>
-                <li class="container-redes__li">
-                  <svg style="fill: white;" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"  target="_blank"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                  </svg> 
-                  <a href="https://www.linkedin.com/company/nguru/" target="_blank">Linkedin
-                  </a>
-                </li>  
-                <li class="container-redes__li">
-                  <svg style="fill: white;" white;" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" ><title>WhatsApp</title><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                  <a href="https://wa.me/5492984180495" target="_blank">Whatsapp
-                  </a>
-                </li>
-               </ul>
-               <!-- <ul class="container-redes__text">
-                <li class=""><a href="">Instagram</a></li>
-                <li><a href="">Facebook</a></li>
-                <li><a href="">Linkedin</a></li>
-                <li><a href="">Gmail</a></li>
-                <li><a href="">Youtube</a></li>
-               </ul> -->
-
-              </div>
-              <div class="container-redes-contact">
+           
+              <div class="container-redes-info-contact">
                 <div class="container-redes-contact__title">
                   <h4 >Información de contacto</h4>
                 </div>
@@ -888,25 +674,43 @@
           </div>
       </footer>
     </div>
-    <!-- <div class="preloader"> 
-      <div class="preloader-logo"><img src="images/logo-default-480x80.png" width="240" height="40" alt=""></div>
-      <div class="preloader-body">
-        <div id="loadingProgressG">
-          <div class="loadingProgressG" id="loadingProgressG_1"></div>
-        </div>
-      </div>
-    </div> -->
+  
     <!-- Global Mailform Output-->
     <div class="snackbars" id="form-output-global"></div>
+    <!-- MODAL (Poner antes del cierre del body) -->
+    <!-- Modal del Video -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body text-center">
+        <video id="promoVideo" width="100%" controls playsinline>
+          <source src="./videos/busin-2.mp4" type="video/mp4">
+          <source src="./videos/busin-2.webm" type="video/webm">
+          Tu navegador no soporta el elemento de video.
+        </video>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- Javascript-->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="./js/script-reload.js"></script>
+    <script src="./js/script-reload-v2.js"></script>
+    <script src="js/modal-video.js"></script>
+
     <!-- coded by ragnar-->
     <a href="https://wa.me/5492984180495" target="_blank" class="icon-whatsapp" href="#">
       <figure class="icon-whatsapp__container">
         <img src="./icons-redes-sociales/whatsapp-fixed.png" alt="">
       </figure>
     </a>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new WOW().init();
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin/   # Bloquea acceso a la carpeta admin
+Disallow: /private/ # Bloquea acceso a archivos privados
+
+Sitemap: https://nguru.com.ar/sitemap.xml
